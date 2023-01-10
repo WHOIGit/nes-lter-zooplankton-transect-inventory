@@ -1,0 +1,63 @@
+---
+title: "Zooplankton sample inventory package based on Minimal EDI package generated using EMLassemblyline and ediutilities"
+author: "Joe Futrelle, Stace Beaulieu"
+date: "2023-01-10"
+output: html_notebook
+---
+
+Libraries used
+
+```{r}
+# two of the required packages are installed from GitHub
+# library(remotes)
+# remotes::install_github("EDIorg/EMLassemblyline")
+# remotes::install_github("WHOIGit/ediutilities")
+
+library(EMLassemblyline)
+library(ediutilities)
+library(here)
+library(lubridate)
+```
+
+Read data table
+
+```{r}
+# data_table <- read.csv(here('nes-lter-minimal.csv'))
+# data_table$date = ymd_hms(data_table$date)
+
+data_table <- readxl::read_excel(path='NES-LTER_Transect_Sample_Inventory.xlsx', sheet='entry')
+# can write to csv because the data_table is already clean and ready to submit  
+write.csv(data_table, 'nes-lter-zooplankton-transect-inventory.csv', row.names=FALSE)
+
+```
+
+Read the Excel metadata template and generate text templates used by
+EMLassemblyline
+
+```{r}
+# excel_to_template(here('nes-lter-minimal-info'), 'nes-lter-minimal', rights='CC0')
+
+excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'zooplankton-transect-inventory', rights='CC0')
+
+```
+Generate the package and insert the parent project node into the resulting EML
+
+```{r}
+# use package ID assigned in vortex README
+pkg_id <- 'knb-lter-nes.24.1'
+
+make_eml(here(),
+         dataset.title='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         data.table='nes-lter-zooplankton-transect-inventory.csv',
+         data.table.description='Zooplankton sample inventory for NES-LTER Transect cruises',
+         data.table.name = 'nes-lter-zooplankton-transect-inventory',
+         temporal.coverage = c('2018-01-31', '2021-11-11'),
+         geographic.description = "NES-LTER Transect",
+         geographic.coordinates = c(41.325, -70.445, 39.7733, -70.8833), # North is MVCO, South and East is ‘Lu11c’ from EN627
+         maintenance.description = "ongoing",
+         user.id = "NES",
+         user.domain = "LTER",
+         package.id = pkg_id)
+
+project_insert(pkg_id,'parent_project_RAPID.xml')
+```

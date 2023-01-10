@@ -96,4 +96,16 @@
       <funding>
         <para>NSF Award OCE-1655686</para>
       </funding>
+	  <relatedProject>
+	    <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
+		<personnel>
+		  <individualName>
+		    <givenName>Heidi</givenName>
+			<surName>Sosik</surName>
+		  </individualName>
+		  <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+		  <role>Principal Investigator</role>
+		</personnel>
+		<funding>NSF Award OCE-2102434</funding>
+	  </relatedProject>
     </project>
