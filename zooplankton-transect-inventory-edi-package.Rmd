@@ -37,7 +37,7 @@ EMLassemblyline
 ```{r}
 # excel_to_template(here('nes-lter-minimal-info'), 'nes-lter-minimal', rights='CC0')
 
-excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'zooplankton-transect-inventory', rights='CC0')
+excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'nes-lter-zooplankton-transect-inventory', rights='CC0')
 
 ```
 Generate the package and insert the parent project node into the resulting EML
@@ -51,6 +51,7 @@ make_eml(here(),
          data.table='nes-lter-zooplankton-transect-inventory.csv',
          data.table.description='Zooplankton sample inventory for NES-LTER Transect cruises',
          data.table.name = 'nes-lter-zooplankton-transect-inventory',
+         data.table.quote.character = '"',
          temporal.coverage = c('2018-01-31', '2021-11-11'),
          geographic.description = "NES-LTER Transect",
          geographic.coordinates = c(41.325, -70.445, 39.7733, -70.8833), # North is MVCO, South and East is ‘Lu11c’ from EN627
