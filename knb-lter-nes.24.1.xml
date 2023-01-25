@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.24.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017</title>
+    <creator>
+      <individualName>
+        <givenName>Sarah</givenName>
+        <givenName>G</givenName>
+        <surName>Glancy</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>sglancy@whoi.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Joel</givenName>
+        <givenName>K</givenName>
+        <surName>Llopiz</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>jllopiz@whoi.edu</electronicMailAddress>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Julia</givenName>
+        <surName>Cox</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <role>technician</role>
+    </associatedParty>
+    <pubDate>2023-01-25</pubDate>
+    <abstract>
+      <para>This dataset lists the inventory of physical samples from zooplankton net tows conducted on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect lies south of Martha’s Vineyard, Massachusetts. Dedicated NES-LTER cruises target summer and winter seasons, with samples collected in oblique tows with a bongo net fitted with 150 and 335 micron mesh nets, as well as a ring net with a 20 micron mesh net. Additional cruises along the NES-LTER Transect, including spring and fall cruises with the Ocean Observatories Initiative, collect samples in vertical tows using a ring net with 150 micron mesh net. Samples are shared with different labs for purposes including DNA metabarcoding, stable isotopes, and morphological identification.
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>populations</keyword>
+      <keyword>organic matter</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>zooplankton</keyword>
+      <keyword>transects</keyword>
+      <keyword>marine</keyword>
+      <keyword>oceanography</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Bongo net</keyword>
+      <keyword>ring net</keyword>
+      <keywordThesaurus>SeaVoX Device Catalogue</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Single net or net pair oblique tow</keyword>
+      <keyword>Single net or net pair vertical tow</keyword>
+      <keywordThesaurus>BODC Sampling net gear deployment vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Northeast U.S. Continental Shelf</keyword>
+      <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
+    </keywordSet>
+    <additionalInfo>
+      <para>This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63).
+For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.
+</para>
+    </additionalInfo>
+    <intellectualRights>
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>NES-LTER Transect</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-70.8833</westBoundingCoordinate>
+          <eastBoundingCoordinate>-70.445</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.325</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7733</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2018-01-31</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-11-11</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+    </maintenance>
+    <contact>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <positionName>Nes-Lter Information Manager</positionName>
+      <electronicMailAddress>lter-nes-info@whoi.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>This would contain a description of methods used in data collection,
+preparation, and QA/QC, among other things.
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Northeast U.S. Shelf LTER</title>
+      <personnel>
+        <individualName>
+          <givenName>Heidi</givenName>
+          <surName>Sosik</surName>
+        </individualName>
+        <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Stace</givenName>
+          <surName>Beaulieu</surName>
+        </individualName>
+        <electronicMailAddress>sbeaulieu@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2609-5453</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Changsheng</givenName>
+          <surName>Chen</surName>
+        </individualName>
+        <electronicMailAddress>c1chen@umassd.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8715-6101</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rubao</givenName>
+          <surName>Ji</surName>
+        </individualName>
+        <electronicMailAddress>rji@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8839-5427</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Steven</givenName>
+          <surName>Lentz</surName>
+        </individualName>
+        <electronicMailAddress>slentz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-7498-0281</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Joel</givenName>
+          <surName>Llopiz</surName>
+        </individualName>
+        <electronicMailAddress>jllopiz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-7584-7471</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Susanne</givenName>
+          <surName>Menden-Deuer</surName>
+        </individualName>
+        <electronicMailAddress>smenden@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8434-4251</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Michael</givenName>
+          <surName>Neubert</surName>
+        </individualName>
+        <electronicMailAddress>mneubert@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8820-5008</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Tatiana</givenName>
+          <surName>Rynearson</surName>
+        </individualName>
+        <electronicMailAddress>rynearson@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-2951-0066</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rachel</givenName>
+          <surName>Stanley</surName>
+        </individualName>
+        <electronicMailAddress>rstanle2@wellesley.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <abstract>
+        <para>The Northeast U.S. Shelf (NES) Long-Term Ecological Research (LTER) project integrates observations, experiments, and models to understand and predict how planktonic food webs are changing, and how those changes impact the productivity of higher trophic levels. The NES-LTER is co-located with the Northeast U.S. Continental Shelf Large Marine Ecosystem, spanning the Middle Atlantic Bight and Gulf of Maine. Our focal cross-shelf transect extends about 150 km southward from Martha’s Vineyard, MA, to just beyond the shelf break. Our overarching question is: How is climate change impacting the pelagic NES ecosystem and, in particular, affecting the relationship between compositional (e.g., species diversity and size structure) and aggregate (e.g., rates of primary production, and transfer of energy to important forage fish species) variability?</para>
+      </abstract>
+      <funding>
+        <para>NSF Award OCE-1655686</para>
+      </funding>
+      <relatedProject>
+        <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
+        <personnel>
+          <individualName>
+            <givenName>Heidi</givenName>
+            <surName>Sosik</surName>
+          </individualName>
+          <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-2102434</funding>
+      </relatedProject>
+    </project>
+    <dataTable>
+      <entityName>nes-lter-zooplankton-transect-inventory</entityName>
+      <entityDescription>Zooplankton sample inventory for NES-LTER Transect cruises</entityDescription>
+      <physical>
+        <objectName>nes-lter-zooplankton-transect-inventory.csv</objectName>
+        <size unit="bytes">170740</size>
+        <authentication method="MD5">4f8dc07d80bfa9d6b8e3d0ee57a204a9</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>cruise</attributeName>
+          <attributeDefinition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>station</attributeName>
+          <attributeDefinition>longitudinal stations along established NES-LTER transect and MVCO; if station does not begin with an L, it is an opportunistic sample collected off of the longitudinal transect.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>longitudinal stations along established NES-LTER transect and MVCO; if station does not begin with an L, it is an opportunistic sample collected off of the longitudinal transect.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>cast</attributeName>
+          <attributeDefinition>CTD rosette cast number chronological per cruise</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">45</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>cast_type</attributeName>
+          <attributeDefinition>oblique or vertical net casts</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>oblique</code>
+                    <definition>Single net or net pair oblique tow http://vocab.nerc.ac.uk/collection/B07/current/NDT007/</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>vertical</code>
+                    <definition>Single net or net pair vertical tow http://vocab.nerc.ac.uk/collection/B07/current/NDT001/</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>net_type</attributeName>
+          <attributeDefinition>type of net deployed</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Ring</code>
+                    <definition>Gimbal-ring zooplankton sampler - Kozasa (1984) http://vocab.nerc.ac.uk/collection/L22/current/NETT0045/</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Bongo</code>
+                    <definition>Bongo net http://vocab.nerc.ac.uk/collection/L22/current/NETT0176/</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>mesh</attributeName>
+          <attributeDefinition>size of the mesh of the net used</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>150.0</code>
+                    <definition>size of mesh is 150 microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>335.0</code>
+                    <definition>size of mesh is 335 microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>20.0</code>
+                    <definition>size of mesh is 20 microns</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>purpose</attributeName>
+          <attributeDefinition>intention for collecting sample</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>DNA</code>
+                    <definition>used for meta-barcoding of entire sample</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>morphID</code>
+                    <definition>used for morphological identification</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>stableisotope</code>
+                    <definition>used for stable isotope analysis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>taxapicking</code>
+                    <definition>used to select single taxa for stable isotopes, DNA barcoding, morphological ID, or other opportunistic analysis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>other</code>
+                    <definition>use undecided</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>stableisotope_sizerange</attributeName>
+          <attributeDefinition>smaller to larger range of um of sample sieves</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>&gt;1000</code>
+                    <definition>ambient zooplankton greater than 1000 microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>&gt;500&amp;&lt;1000</code>
+                    <definition>ambient zooplankton greater than 500 and smaller than 1000 microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>&gt;200&amp;&lt;500</code>
+                    <definition>ambient zooplankton greater than 200 and smaller than 500microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>&gt;100&amp;&lt;200</code>
+                    <definition>ambient zooplankton greater than 100 and smaller than 200 microns</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>&gt;20&amp;&lt;100</code>
+                    <definition>ambient zooplankton greater than 20 and smaller than 100 microns</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PI_recipient</attributeName>
+          <attributeDefinition>PI or lab that will be responsible for storing or processing the sample.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Rynearson</code>
+                    <definition>Tatiana Rynearson, URI</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Llopiz</code>
+                    <definition>Joel Llopiz, WHOI</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Richardson</code>
+                    <definition>David Richardson, NOAA NEFSC</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fixative</attributeName>
+          <attributeDefinition>method of preservation used on the sample</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>EtOH</code>
+                    <definition>95% Ethanol</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Frz</code>
+                    <definition>Frozen at minimum -20C</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>F/SW</code>
+                    <definition>12% formalin (buffered) and filtered seawater</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>net_fraction</attributeName>
+          <attributeDefinition>if not whole net, the portion of the net that comprises the sample</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.125</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>no_of_jars</attributeName>
+          <attributeDefinition>if the sample is large and was split between multiple jars, record the number of jars or vials (jars used an synonym for whatever container type the sample is preserved in)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>comments_logsheets</attributeName>
+          <attributeDefinition>comments from the paper fieldsheets</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>comments from the paper fieldsheets</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>comments_reMissingSample</attributeName>
+          <attributeDefinition>comments on why a sample is missing</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>comments on why a sample is missing</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Not Applicable</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>976</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <emlEditor>
+        <app>EMLassemblyline</app>
+        <release>3.5.5</release>
+      </emlEditor>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
