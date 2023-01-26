@@ -1,6 +1,6 @@
 # Field operations for net tows
 
-Here, we summarize the field operations for net tows, since the focus of this data package is on the sample preparation in the lab on board ship. Field operations for net tows will be detailed in a separate data package for zooplankton abundance.
+Here, we summarize the field operations for net tows, since the focus of this data package is on the sample preparation in the lab on board ship. Field operations for net tows are logged in the event log data package [knb-lter-nes.20] for Transect cruises, and results from sample analyses will be detailed in separate data packages, e.g., zooplankton abundance.
 
 1. Field operations for oblique tow bongo/ring net
 During dedicated transect cruises (i.e. winter and summer, aboard the Endeavor), zooplankton is sampled at each regular transect station (LTER1 – LTER11). Zooplankton is collected with 61-cm diameter bongo nets, one of which has 335-µm mesh and the other 150-µm mesh (each is 3.2 m long, as they have similar porosity values—45% and 46%). A General Oceanics mechanical flowmeter is attached in the center of each mouth. In addition to the bongo nets, a 30-cm-diameter, 20-µm-mesh ring net is attached ~2 m above the bongo frame with a book clamp. This net is non-quantitative and is only used for size fraction stable isotope analysis—specifically the 20-100 µm and 100-200 µm fractions.
@@ -100,6 +100,7 @@ Richardson working group
 - short term storage
 - - in plankton lab on NEFSC Narragansett campus in Narragansett, RI
 - - Samples are shipped to Poland a maximum of 3 times a year.  These samples are processed following MARMAP NEFSC Sorting Protocols 5.3.1 ECOSYSTEM MONITORING - ZOOPLANKTON
+- Long term storage
 - - what we receive back for each sample are:
 - - - Ichthyoplankton:
 - - - 1) vial of cephalopod paralarvae (not IDed to species)
@@ -108,6 +109,7 @@ Richardson working group
 - - - Zooplankton
 - - - 1) Quarter aliquot of the sample
 - - - 2) vial of individuals for each taxa from the 400+ aliquot of individuals.  In some cases taxa are combined in the vials.
+- - these are archived at the Narragansett Lab where we have samples dating back to the 1970s
 
 # Quality assurance and data package assembly
 
