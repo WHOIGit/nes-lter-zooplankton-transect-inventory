@@ -14,42 +14,74 @@ During transect cruises with collaborators (i.e., OOI in spring and fall), zoopl
 1. Sampling protocol for oblique tow bongo/ring net
 Upon retrieval, nets are rinsed with a seawater hose to collect all plankton in the cod ends. Cod ends are carefully removed (and not until the water level is below the cod end opening) while sitting within a bucket. Labeled cod ends are then brought inside within their similarly labeled buckets (distinguishing between the 335-µm and 150-µm mesh nets) for processing in the wet lab. Samples are split with a Folsom splitter according to an established plan for where the aliquots are going for the various planned analyses—specifically, preserved in a 5% buffered formalin-seawater solution or 95% ethanol, or frozen. 
 These splits and their method of preservation are: 
+
 - 335 µm mesh net:
+
 - - ¾ split into 5% buffered formalin-seawater solution (for morphological IDs—to NOAA)
+
 - - ¼ split in 95% ethanol (available for DNA metabarcoding—to Rynearson lab)
+
 - 150 µm mesh net:
+
 - - ¼ split into 95% ethanol (for morphological IDs—to Llopiz lab)
+
 - - ¼ split into 95% ethanol (for DNA metabarcoding—to Rynearson lab)
+
 - - ¼ split to be size fractionated on board (>1000 µm, 500-1000 µm, and 200-500 µm) for stable isotope analyses. Size fractions are frozen (-20°C) in vials.
+
 - - ¼ split for fresh sorting on board and freezing of individual taxa (or the split will be frozen for later sorting of taxa in the lab) for stable isotope analyses—4 dominant taxa of copepods (e.g. Calanus, Centropages, Pseudocalanus, Oithona), as well as appendicularians and chaetognaths.
 
 Detailed checklist of tasks and steps:
 Upon retrieval
+
 - Record flowmeter readings for each net
+
 - Rinse nets from the outside of the net only, starting high and rinse all the way down to the cod end
+
 - If there are a few large organisms in the sample (e.g. jellies), remove them prior to splitting and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed. Note on the event log which net they were removed from, and label their jar appropriately.
+
 - Rinse all sieves and anything with sample on it between all samples
+
 - Rinse all gear with freshwater when sampling has ended for the cruise
+
 - For 335 µm sample:
+
 - - Split sample with Folsom splitter. 
+
 - - Put 3/4 of the net into a glass quart jar with formalin to a 12% formalin/seawater mix, buffer with 1:1 disodium phosphate:monosodium phosphate.
+
 - - Drain and gather the remaining ¼ split onto a ≤335-µm-mesh sieve and preserve in 95% ethanol using a glass pint jar. Jar should be at least 2/3’s full of ethanol  and 1/3 or less of plankton.
+
 - - Make sure each sample has the correct internal and external label on it.
+
 - - Store samples separately.
+
 - For the 150 µm sample:
+
 - - Split sample with Folsom splitter..
+
 - - Preserve two ¼ splits in 95% ethanol by draining and gathering each on a 150 µm mesh sieve and transferring to a plastic pint jar using a squirt bottle of ethanol (one sample goes to Llopiz lab, one to Rynearson lab)
+
 - - One of the remaining ¼ splits gets size fractionated on 1000 µm, 500 µm, and 200 µm sieves, and what is collected on each sieve gets drained and transferred to a cryovial and then frozen at -20°C
+
 - - The other ¼ split will be drained and frozen at maximum -20 celcius
+
 - - Make sure each sample has the correct internal and external label on it.
+
 - - Place ethanol-preserved splits in their appropriate boxes (Llopiz and Rynearson labs)
+
 - For the 20 µm net sample:
+
 - - This sample is non-quantitative. target a well mixed sub-sample. 
+
 - - Size fractions 100-200 µm and 20-100-µm are retained, drained and transferred to a cryovial and then frozen at -20°C
 24 hrs after sampling
+
 - Drain and replace ethanol of ethanol-preserved samples and note the date changed on the external jar labels and on the bongo event log sheet. 
+
 - Test pH of formalin sample sand add additional buffer if pH is <7
 Post-cruise
+
 - Ensure that samples get to respective labs and advise on which, if any, samples need additional ethanol changes.
 
 2. Sampling protocol for vertical tow ring net
@@ -57,14 +89,22 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
 
 Detailed checklist of tasks and steps:
 Upon retrieval
+
 - Drain the contents into a 150-µm sieve, and use pre-filtered seawater to rinse the cod end. Make sure the mesh on the cod end is rinsed well. 
+
 - If there are a few large organisms in the sample (e.g. gelatinous or fish), remove them and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed. 
+
 - Transfer entire sample to a plastic 160z or 4oz jar depending on sample density.
+
 - Make sure each sample has the correct internal and external label.
+
 - Rinse all sieves and anything with sample on it with freshwater between all stations.
+
 - Rinse all gear with freshwater when sampling has ended for the cruise.
 24 hrs after sampling
+
 - Drain and replace ethanol of ethanol-preserved samples and note the date changed on the external jar labels and on the bongo event log sheet.
+
 - Note the date changed on the external jar labels and on the ring net event log sheet. 
 
 # Storage protocols post-cruise
@@ -72,43 +112,77 @@ Upon retrieval
 Post-cruise sample allocation and storage:
 
 Llopiz lab
+
 - samples stored: 
+
 - - Ethanol-MorphID
+
 - - Frozen SIA
+
 - - Frozen Taxa-picking
+
 - short term storage
+
 - - samples are examined for proper preservation and ethanol is changed if needed, date of change is recorded on the jar.
+
 - - a layer of electrical tape is wrapped around the opening of the jar to prevent evaporation
+
 - - jars are placed in cardboard boxes organized roughly by cruise and date.
+
 - - boxes are labeled with the cruise IDs and MVCO dates if applicable. 
+
 - - boxes of samples are stored in Llopiz lab: Redfield 226 with ethanol safety tag on outside of box.
+
 - Long term storage
+
 - - samples are moved to BioSpecs in Llopiz storage area. 
+
 - - in addition to the writing on box for short term storage, sticker labels available from Phil Alatalo at WHOI are affixed to the boxes and the accompanying data sheet online is filled out.
 
 Rynearson Lab
+
 - samples stored:
+
 - - Ethanol-150-metabarcoding
+
 - - Ethanol-335-metabarcoding
+
 - Long term storage
+
 - - Samples are checked a) for proper, legible labeling and b) to ensure ethanol was exchanged after the initial fixation. If needed, labels are improved and ethanol is exchanged where not yet done.
+
 - - Samples are stored in labeled cardboard boxes in drawers in the Rynearson lab.
 
 Richardson working group
+
 - samples stored:
+
 - - Formalin-MorphID
+
 - short term storage
+
 - - in plankton lab on NEFSC Narragansett campus in Narragansett, RI
+
 - - Samples are shipped to Poland a maximum of 3 times a year.  These samples are processed following MARMAP NEFSC Sorting Protocols 5.3.1 ECOSYSTEM MONITORING - ZOOPLANKTON
+
 - Long term storage
+
 - - what we receive back for each sample are:
+
 - - - Ichthyoplankton:
+
 - - - 1) vial of cephalopod paralarvae (not IDed to species)
+
 - - - 2) vial of fish eggs (not IDed to species)
+
 - - - 3) one vial of larval fish for each taxa
+
 - - - Zooplankton
+
 - - - 1) Quarter aliquot of the sample
+
 - - - 2) vial of individuals for each taxa from the 400+ aliquot of individuals.  In some cases taxa are combined in the vials.
+
 - - these are archived at the Narragansett Lab where we have samples dating back to the 1970s
 
 # Quality assurance and data package assembly
