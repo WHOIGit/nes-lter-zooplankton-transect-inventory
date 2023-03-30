@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.24.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.24.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
@@ -38,9 +38,9 @@
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
       <role>technician</role>
     </associatedParty>
-    <pubDate>2023-01-26</pubDate>
+    <pubDate>2023-03-30</pubDate>
     <abstract>
-      <para>This dataset lists the inventory of physical samples from zooplankton net tows conducted on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect lies south of Martha’s Vineyard, Massachusetts. Dedicated NES-LTER cruises target summer and winter seasons, with samples collected in oblique tows with a bongo net fitted with 150 and 335 micron mesh nets, as well as a ring net with a 20 micron mesh net. Additional cruises along the NES-LTER Transect, including spring and fall cruises with the Ocean Observatories Initiative, collect samples in vertical tows using a ring net with 150 micron mesh net. Samples are shared with different labs for purposes including DNA metabarcoding, stable isotopes, and morphological identification.&#13;
+      <para>This dataset lists the inventory of physical samples from zooplankton net tows conducted on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect lies south of Martha’s Vineyard, Massachusetts. Dedicated NES-LTER cruises target summer and winter seasons, with samples collected in oblique tows with a bongo net fitted with 150 and 335 micron mesh nets, as well as a ring net with a 20 micron mesh net. Additional cruises along the NES-LTER Transect, including spring and fall cruises with the Ocean Observatories Initiative, collect samples in vertical tows using a ring net with 150 micron mesh net. Samples are shared with different labs for purposes including DNA metabarcoding, stable isotopes, and morphological identification.
 </para>
     </abstract>
     <keywordSet>
@@ -70,8 +70,8 @@
       <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
     </keywordSet>
     <additionalInfo>
-      <para>This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63).&#13;
-For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.&#13;
+      <para>This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63).
+For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.
 </para>
     </additionalInfo>
     <intellectualRights>
