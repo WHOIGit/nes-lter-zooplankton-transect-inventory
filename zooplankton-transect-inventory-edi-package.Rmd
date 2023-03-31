@@ -44,7 +44,7 @@ Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
 # use package ID assigned in vortex README
-pkg_id <- 'knb-lter-nes.24.1'
+pkg_id <- 'knb-lter-nes.24.2'
 
 make_eml(here(),
          dataset.title='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
