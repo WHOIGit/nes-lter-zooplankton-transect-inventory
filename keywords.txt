@@ -5,6 +5,8 @@ zooplankton	LTER Controlled Vocabulary
 transects	LTER Controlled Vocabulary
 marine	LTER Controlled Vocabulary
 oceanography	LTER Controlled Vocabulary
+ecology	LTER Controlled Vocabulary
+plankton	LTER Controlled Vocabulary
 Bongo net	SeaVoX Device Catalogue
 ring net	SeaVoX Device Catalogue
 Single net or net pair oblique tow	BODC Sampling net gear deployment vocabulary

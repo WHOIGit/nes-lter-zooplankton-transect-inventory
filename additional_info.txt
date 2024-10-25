@@ -1,2 +1,0 @@
-This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63).
-For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.

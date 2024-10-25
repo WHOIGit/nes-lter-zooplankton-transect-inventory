@@ -1,7 +1,7 @@
 ---
 title: "Zooplankton sample inventory package based on Minimal EDI package generated using EMLassemblyline and ediutilities"
-author: "Joe Futrelle, Stace Beaulieu"
-date: "2023-01-10"
+author: "Joe Futrelle, Stace Beaulieu, Kate Morkeski"
+date: "r Sys.Date()"
 output: html_notebook
 ---
 
@@ -19,15 +19,17 @@ library(here)
 library(lubridate)
 ```
 
-Read data table
+Read data tables
 
 ```{r}
-# data_table <- read.csv(here('nes-lter-minimal.csv'))
-# data_table$date = ymd_hms(data_table$date)
 
-data_table <- readxl::read_excel(path='NES-LTER_Transect_Sample_Inventory.xlsx', sheet='entry')
+inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2.csv'))
+meta <- read.csv(here('nes-lter-zooplankton-tow-metadata-v2.csv'))
+meta$datetime_UTC_start <- dmy_hms(paste(meta$date_start_UTC, meta$time_start_UTC))
+meta$datetime_UTC_end <- dmy_hms(paste(meta$date_end_UTC, meta$time_end_UTC))
+
 # can write to csv because the data_table is already clean and ready to submit  
-write.csv(data_table, 'nes-lter-zooplankton-transect-inventory.csv', row.names=FALSE)
+#write.csv(data_table, 'nes-lter-zooplankton-transect-inventory.csv', row.names=FALSE)
 
 ```
 
@@ -35,30 +37,38 @@ Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-# excel_to_template(here('nes-lter-minimal-info'), 'nes-lter-minimal', rights='CC0')
+# Alex provided metadata in csv files, so use below write.table steps instead of excel_to_template
+#excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'nes-lter-zooplankton', rights='CC0', file_type=".md")
 
-excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'nes-lter-zooplankton-transect-inventory', rights='CC0')
+write.table(read.csv("nes-lter-zooplankton-tow-metadata-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-tow-metadata-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-categoricalVariablesHeaders.csv", sep=","), "catvars_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+write.table(read.csv("personnel.csv", sep=","), "personnel.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 
 ```
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
+
+temp_coverage <- temporal_coverage(meta$datetime_UTC_start)
+
 # use package ID assigned in vortex README
 pkg_id <- 'knb-lter-nes.24.2'
 
-make_eml(here(),
-         dataset.title='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
-         data.table='nes-lter-zooplankton-transect-inventory.csv',
-         data.table.description='Zooplankton sample inventory for NES-LTER Transect cruises',
-         data.table.name = 'nes-lter-zooplankton-transect-inventory',
-         data.table.quote.character = '"',
-         temporal.coverage = c('2018-01-31', '2021-11-11'),
+make_eml(path = here(),
+         dataset.title ='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         data.table = c('nes-lter-zooplankton-transect-inventory-v2.csv', 'nes-lter-zooplankton-tow-metadata-v2.csv'),
+         #data.table = c('inventory.csv', 'meta.csv'),
+         data.table.description = c('Zooplankton sample inventory for NES-LTER Transect cruises', 'Zooplankton tow metadata for NES-LTER Transect cruises'),
+         data.table.name = c('nes-lter-zooplankton-transect-inventory', 'nes-lter-zooplankton-tow-metadata'),
+         data.table.quote.character = c('"','"'),
+         temporal.coverage = temp_coverage,
          geographic.description = "NES-LTER Transect",
-         geographic.coordinates = c(41.325, -70.445, 39.7733, -70.8833), # North is MVCO, South and East is ‘Lu11c’ from EN627
+         geographic.coordinates = geographic_coordinates(meta$lat_start, meta$lon_start), # Not including end-of-tow coordinates
          maintenance.description = "ongoing",
          user.id = "NES",
          user.domain = "LTER",
          package.id = pkg_id)
 
-project_insert(pkg_id,'parent_project_RAPID.xml')
+project_insert(pkg_id,'parent_project_NESI-II_RAPID_OOI.txt')
 ```

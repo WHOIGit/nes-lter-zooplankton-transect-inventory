@@ -1,0 +1,20 @@
+attributeName,code,definition
+NOAA_335,Y,Sample was collected for NOAA from 335 micron net
+NOAA_335,N,No sample was collected for NOAA from 335 micron net
+DNA_335,Y,Sample was collected for DNA from 335 micron net
+DNA_335,N,No sample was collected for DNA from 335 micron net
+morph_ID_150,Y,Sample was collected for NOAA from 335 micron net
+morph_ID_150,N,No sample was collected for NOAA from 335 micron net
+DNA_150,Y,Sample was collected for DNA from 150 micron net
+DNA_150,N,No sample was collected for DNA from 150 micron net
+size_fract_150,Y,Size fractioned sample was collected. Various size fractions are taken from this net; if any were taken this is marked as Yes even if some are missing.
+size_fract_150,N,No size fractions were collected from 150 micron net
+taxa_pick_150,Y ,Taxa picking sample was collected from 150 micron net
+taxa_pick_150,N,No taxa picking sample was collected from 150 micron net
+size_fract_20,Y,Size fractioned sample was collected. Various size fractions are taken from this net; if any were taken this is marked as Yes even if some are missing.
+size_fract_20,N,No size fractions were collected from 20 micron net
+primary_flag,1,good
+primary_flag,2,not evaluated
+primary_flag,3,questionable/suspect
+primary_flag,4,bad
+primary_flag,9,missing data

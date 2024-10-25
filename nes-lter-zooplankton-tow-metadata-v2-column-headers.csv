@@ -1,0 +1,49 @@
+attributeName,attributeDefinition,class,unit,dateTimeFormatString,missingValueCode,missingValueCodeExplanation
+cruise,"Identifier for research cruise, generally including abbreviation for research vessel and voyage number",character,,,,
+station,"Longitudinal stations along established NES-LTER transect and MVCO. If a station does not begin with an 'L', it is an opportunistic sample collected off the longitudinal transect.",character,,,,
+cast,Chronological CTD rosette cast number per cruise.,character,,,,
+sample_name,Full sample name (cruise_station_cast),character,,,,
+date_start_UTC,Date event started UTC,Date,DDMMYY,DDMMYY,NA,Missing value
+time_start_UTC,Time event started in UTC (24hr format).,character,hh:mm:ss,hh:mm:ss,NA,Missing value
+date_end_UTC,Date event ended UTC,Date,DDMMYY,DDMMYY,NA,Missing value
+time_end_UTC,Time event ended in UTC (24hr format).,character,hh:mm:ss,hh:mm:ss,NA,Missing value
+lat_start,Latitude of event start in decimal degrees recorded with the E-log.,numeric,degree,,NA,Missing value
+lon_start,Longitude of event start in decimal degrees recorded with the E-log.,numeric,degree,,NA,Missing value
+lat_end,Latitude of event end in decimal degrees recorded with the E-log.,numeric,degree,,NA,Missing value
+lon_end,Longitude of event end in decimal degrees recorded with the E-log.,numeric,degree,,NA,Missing value
+depth_bottom,Maximum (bottom) water column depth in meters.,numeric,meter,,,
+depth_target,Target depth of net in meters (usually 5 m off the bottom or 200 m max).,numeric,meter,,,
+depth_TDR,Maximum depth of bongo frame as recorded by a SeaStart ODDI temperature depth recorder TDR in meters.,numeric,meter,,,
+net_max_depth_m,"Maximum corrected depth sampled by zooplankton nets. This value comes from time depth recorder TDR, CTD mounted on Bongo wire, calculated using wire out and wire angle, or calculated based on maximum wire out for vertical Ring Net tows. This is the depth value used for depth integrated abundance. ",numeric,meter,,,
+avg_angle,Average angle of winch wire during oblique tows (not applicable for ring net only tows) in degrees. Estimated using a handheld inclinometer. ,numeric,degree,,,
+max_wire_out_m,Maximum length of winch wire deployed during the tow for zooplankton nets (in meters).,numeric,meter,,,
+wire_rate_out_m_min,Rate at which the winch wire was deployed for the zooplankton nets (in meters per minute).,numeric,metersPerMinute,,,
+wire_rate_in_m_min,Rate at which the winch wire was retrieved for the zooplankton nets (in meters per minute).,numeric,metersPerMinute,,,
+STW_start,Ship speed through water at the start of the tow (in knots). This value is used to calculate volume sampled when flowmeters fail.,numeric,knot,,,
+SOG_start,Ship speed over ground at the start of the tow (in knots).,numeric,knot,,,
+STW_end,Ship speed through water at the end of the tow (in knots). This value is used to calculate volume sampled when flowmeters fail.,numeric,knot,,,
+SOG_end,Ship speed over ground at the end of the tow (in knots).,numeric,knot,,,
+flowmeter_sn_335,Flowmeter serial number (usually 29914 for 335 micron net - but not always) used in 335 micron net.,numeric,dimensionless,,,
+flow_start_335,Starting flowmeter values of 335 micron net.,numeric,dimensionless,,,
+flow_end_335,Ending flowmeter values of 335 micron net. ,numeric,dimensionless,,,
+tot_flow_counts_335,Difference between flow_start_335 and flow_end_335 for total flow. ,numeric,dimensionless,,,
+vol_filtered_m3_335,"((tot_flow_counts_335/10) * flowmeter calibration factor * gear area in meters squared) where flowmeter calibration factor = 0.26873 and gear area = 0.2922. When flowmeter failed, volume was calcuated using geometric approach (area of net mouth in meters squared * duration of tow in seconds * ship speed during tow in meters per second.",numeric,meterCubed,,,
+NOAA_335,NOAA sample collected in 335 micron net?,categorical,,,,
+DNA_335,DNA sample collected in 335 micron net?,categorical,,,,
+flowmeter_sn_150,Flowmeter serial number (usually 29913 for 150 micron - but not always) used in 150 micron net.,numeric,dimensionless,,,
+flow_start_150,Starting flowmeter values of 150 micron net.,numeric,dimensionless,,,
+flow_end_150,Ending flowmeter values of 150 micron net. ,numeric,dimensionless,,,
+tot_flow_counts_150,Difference between flow_start_150 and flow_end_150 for total flow. ,numeric,dimensionless,,,
+vol_filtered_m3_150,"((tot_flow_counts_150/10) * flowmeter calibration factor * gear area in meters squared) where flowmeter calibration factor = 0.26873 and gear area = 0.2922. When flowmeter failed, volume was calcuated using geometric approach (area of net mouth in meters squared * duration of tow in seconds * ship speed during tow in meters per second.",numeric,meterCubed,,,
+morph_ID_150,MorphID sample collected in 150 micron net?,categorical,,,,
+DNA_150,DNA sample collected in 150 micron net?,categorical,,,,
+size_fract_150,"Size fractions sample collected in 150 micron net? Various size fractions are taken from this, if any were taken this is marked as Yes even if some are missing.",categorical,,,,
+taxa_pick_150,Taxa picking sample collected in 150 micron net?,categorical,,,,
+size_fract_20,"Size fractions sample collected in 20 micron ring net? Various size fractions are taken from this, if any were taken this is marked as Yes even if some are missing.",categorical,,,,
+haul_factor_10m2_335,"Standard haul factor for the 335 micron net, calculated as (net_max_depth_m * 10) / vol_filtered_m3_335. This standardizes the tow to a sampling area of 10 meters squared, to make tows comparable.",numeric,dimensionless,,,
+haul_factor_10m2_150,"Standard haul factor for the 150 micron net, calculated as (net_max_depth_m * 10) / vol_filtered_m3_150. This standardizes the tow to a sampling area of 10 meters squared, to make tows comparable.",numeric,dimensionless,,,
+haul_factor_100m3_335,"Standard haul factor for the 335 micron net, calculated as 100 / vol_filtered_m3_335. This standardizes the tow to a sampled water volume of 100 meters cubed, to make tows comparable.",numeric,dimensionless,,,
+haul_factor_100m3_150,"Standard haul factor for the 150 micron net, calculated as 100 / vol_filtered_m3_150. This standardizes the tow to a sampled water volume of 100 meters cubed, to make tows comparable.",numeric,dimensionless,,,
+comments,Detailed comments from physical bongo event log sheets.,character,,,,
+primary_flag,IODE Quality Flag primary level,categorical,dimensionless,,,
+secondary_flag,Additional context for why a primary flag other than 1 was applied.,character,,,,

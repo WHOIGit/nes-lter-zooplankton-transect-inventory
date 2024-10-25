@@ -14,12 +14,22 @@
     <title>Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017</title>
     <creator>
       <individualName>
-        <givenName>Sarah</givenName>
-        <givenName>G</givenName>
-        <surName>Glancy</surName>
+        <givenName>Alexandra</givenName>
+        <givenName>C</givenName>
+        <surName>Cabanelas</surName>
       </individualName>
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
-      <electronicMailAddress>sglancy@whoi.edu</electronicMailAddress>
+      <electronicMailAddress>acabanelas@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0001-6224-077X</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Megan</givenName>
+        <surName>Ferguson</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>megan.ferguson@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0009-0002-4496-6600</userId>
     </creator>
     <creator>
       <individualName>
@@ -29,19 +39,40 @@
       </individualName>
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
       <electronicMailAddress>jllopiz@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-7584-7471</userId>
     </creator>
+    <creator>
+      <individualName>
+        <givenName>Mei</givenName>
+        <surName>Sato</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>msato@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0217-9898</userId>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Sarah</givenName>
+        <givenName>G</givenName>
+        <surName>Glancy</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>sglancy@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-3914-4402</userId>
+      <role>technician</role>
+    </associatedParty>
     <associatedParty>
       <individualName>
         <givenName>Julia</givenName>
         <surName>Cox</surName>
       </individualName>
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-0389-2206</userId>
       <role>technician</role>
     </associatedParty>
-    <pubDate>2023-03-30</pubDate>
+    <pubDate>2024-10-25</pubDate>
     <abstract>
-      <para>This dataset lists the inventory of physical samples from zooplankton net tows conducted on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect lies south of Martha’s Vineyard, Massachusetts. Dedicated NES-LTER cruises target summer and winter seasons, with samples collected in oblique tows with a bongo net fitted with 150 and 335 micron mesh nets, as well as a ring net with a 20 micron mesh net. Additional cruises along the NES-LTER Transect, including spring and fall cruises with the Ocean Observatories Initiative, collect samples in vertical tows using a ring net with 150 micron mesh net. Samples are shared with different labs for purposes including DNA metabarcoding, stable isotopes, and morphological identification.
-</para>
+      <para>This dataset provides an inventory of physical samples collected from zooplankton bongo and/or ring net tows conducted during the Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect, located south of Martha’s Vineyard, Massachusetts, comprises standard stations L1-L11 and extends 150 km offshore. Dedicated NES-LTER cruises target all four seasons: winter, spring, summer, and fall. Samples are collected via oblique tows with a 61-cm bongo net fitted with 150- and 335-micron mesh nets, as well as a ring net with a 20-micron mesh net. During earlier spring and fall cruises along the NES-LTER Transect, in collaboration with the Ocean Observatories Initiative, samples were collected through vertical tows using a ring net with a 150-micron mesh. Samples collected are distributed among various laboratories for DNA metabarcoding, stable isotopes analysis, and morphological identification. </para>
     </abstract>
     <keywordSet>
       <keyword>populations</keyword>
@@ -53,6 +84,8 @@
       <keyword>transects</keyword>
       <keyword>marine</keyword>
       <keyword>oceanography</keyword>
+      <keyword>ecology</keyword>
+      <keyword>plankton</keyword>
       <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
     </keywordSet>
     <keywordSet>
@@ -70,8 +103,8 @@
       <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
     </keywordSet>
     <additionalInfo>
-      <para>This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63).
-For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.
+      <para>This data package includes data from MIT-WHOI Joint Program (JP) cruises funded by WHOI Academic Programs Office, with Chief Scientists Glen Gawarkiewicz (AR38) and Joel Llopiz (AR32 and AR63). For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430.&#13;
+We’d like to thank additional personnel who conducted bongo tow sampling on Transect cruises, including Sarah G. Glancy, Isabel Honda, Stace Beaulieu, Taylor Crockford, Emily Peacock, Diana Fontaine, Julia Cox, Thomas Heine, Pierre Marrec, Adrienne Breef-Pilz, John San Soucie, Helena McMonagle, Justin Suca, and many others that have assisted with NES-LTER sampling. Sampling wouldn’t have been possible without the hard work of the ship technicians, marine techs, engineers, winch operators, and the entire ship crew. Thank you all for your efforts!&#13;
 </para>
     </additionalInfo>
     <intellectualRights>
@@ -82,10 +115,10 @@ For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initia
       <geographicCoverage>
         <geographicDescription>NES-LTER Transect</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-70.8833</westBoundingCoordinate>
-          <eastBoundingCoordinate>-70.445</eastBoundingCoordinate>
-          <northBoundingCoordinate>41.325</northBoundingCoordinate>
-          <southBoundingCoordinate>39.7733</southBoundingCoordinate>
+          <westBoundingCoordinate>-71.0547</westBoundingCoordinate>
+          <eastBoundingCoordinate>-70.52705</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.524</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7509</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
@@ -94,7 +127,7 @@ For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initia
             <calendarDate>2018-01-31</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2021-11-11</calendarDate>
+            <calendarDate>2024-09-11</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -110,106 +143,262 @@ For other cruises on R/V Neil Armstrong, we thank the Ocean Observatories Initia
     <methods>
       <methodStep>
         <description>
-          <para># Field operations for net tows</para>
-          <para>Here, we summarize the field operations for net tows, since the focus of this data package is on the sample preparation in the lab on board ship. Field operations for net tows are logged in the event log data package [knb-lter-nes.20] for Transect cruises, and results from sample analyses will be detailed in separate data packages, e.g., zooplankton abundance.</para>
-          <para>1. Field operations for oblique tow bongo/ring net
-During dedicated transect cruises (i.e. winter and summer, aboard the Endeavor), zooplankton is sampled at each regular transect station (LTER1 – LTER11). Zooplankton is collected with 61-cm diameter bongo nets, one of which has 335-µm mesh and the other 150-µm mesh (each is 3.2 m long, as they have similar porosity values—45% and 46%). A General Oceanics mechanical flowmeter is attached in the center of each mouth. In addition to the bongo nets, a 30-cm-diameter, 20-µm-mesh ring net is attached ~2 m above the bongo frame with a book clamp. This net is non-quantitative and is only used for size fraction stable isotope analysis—specifically the 20-100 µm and 100-200 µm fractions.
-Tows are single oblique (down then up only once) towing at a speed through the water of 1.5 to 2.0 knots. Target net depth is 5 m off the bottom or 200 m (when bottom depth exceeds 200 m).</para>
-          <para>2. Field operations for vertical tow ring net 
-During transect cruises with collaborators (i.e., OOI in spring and fall), zooplankton is sampled at each regular transect station (LTER1 – LTER11). Zooplankton is collected with a 30cm ring net with 150-µm mesh (2 m long with a porosity of 46%). The tow is a single vertical tow after sending the weight to 1 m off the bottom (the mouth of the net will be 3 m off of the bottom) as determined by a CTD or onboard bottom sounder, while Armstrong uses dynamic positioning systems to remain stationary. Winch pay out and retrieval speed will be 30 m/min. </para>
-          <para># Sampling protocols</para>
-          <para>1. Sampling protocol for oblique tow bongo/ring net
-Upon retrieval, nets are rinsed with a seawater hose to collect all plankton in the cod ends. Cod ends are carefully removed (and not until the water level is below the cod end opening) while sitting within a bucket. Labeled cod ends are then brought inside within their similarly labeled buckets (distinguishing between the 335-µm and 150-µm mesh nets) for processing in the wet lab. Samples are split with a Folsom splitter according to an established plan for where the aliquots are going for the various planned analyses—specifically, preserved in a 5% buffered formalin-seawater solution or 95% ethanol, or frozen. 
-These splits and their method of preservation are: </para>
-          <para>- 335 µm mesh net:</para>
-          <para>- - ¾ split into 5% buffered formalin-seawater solution (for morphological IDs—to NOAA)</para>
-          <para>- - ¼ split in 95% ethanol (available for DNA metabarcoding—to Rynearson lab)</para>
-          <para>- 150 µm mesh net:</para>
-          <para>- - ¼ split into 95% ethanol (for morphological IDs—to Llopiz lab)</para>
-          <para>- - ¼ split into 95% ethanol (for DNA metabarcoding—to Rynearson lab)</para>
-          <para>- - ¼ split to be size fractionated on board (&gt;1000 µm, 500-1000 µm, and 200-500 µm) for stable isotope analyses. Size fractions are frozen (-20°C) in vials.</para>
-          <para>- - ¼ split for fresh sorting on board and freezing of individual taxa (or the split will be frozen for later sorting of taxa in the lab) for stable isotope analyses—4 dominant taxa of copepods (e.g. Calanus, Centropages, Pseudocalanus, Oithona), as well as appendicularians and chaetognaths.</para>
-          <para>Detailed checklist of tasks and steps:
-Upon retrieval</para>
-          <para>- Record flowmeter readings for each net</para>
-          <para>- Rinse nets from the outside of the net only, starting high and rinse all the way down to the cod end</para>
-          <para>- If there are a few large organisms in the sample (e.g. jellies), remove them prior to splitting and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed. Note on the event log which net they were removed from, and label their jar appropriately.</para>
-          <para>- Rinse all sieves and anything with sample on it between all samples</para>
-          <para>- Rinse all gear with freshwater when sampling has ended for the cruise</para>
-          <para>- For 335 µm sample:</para>
-          <para>- - Split sample with Folsom splitter. </para>
-          <para>- - Put 3/4 of the net into a glass quart jar with formalin to a 12% formalin/seawater mix, buffer with 1:1 disodium phosphate:monosodium phosphate.</para>
-          <para>- - Drain and gather the remaining ¼ split onto a ≤335-µm-mesh sieve and preserve in 95% ethanol using a glass pint jar. Jar should be at least 2/3’s full of ethanol  and 1/3 or less of plankton.</para>
-          <para>- - Make sure each sample has the correct internal and external label on it.</para>
-          <para>- - Store samples separately.</para>
-          <para>- For the 150 µm sample:</para>
-          <para>- - Split sample with Folsom splitter..</para>
-          <para>- - Preserve two ¼ splits in 95% ethanol by draining and gathering each on a 150 µm mesh sieve and transferring to a plastic pint jar using a squirt bottle of ethanol (one sample goes to Llopiz lab, one to Rynearson lab)</para>
-          <para>- - One of the remaining ¼ splits gets size fractionated on 1000 µm, 500 µm, and 200 µm sieves, and what is collected on each sieve gets drained and transferred to a cryovial and then frozen at -20°C</para>
-          <para>- - The other ¼ split will be drained and frozen at maximum -20 celcius</para>
-          <para>- - Place ethanol-preserved splits in their appropriate boxes (Llopiz and Rynearson labs)</para>
-          <para>- For the 20 µm net sample:</para>
-          <para>- - This sample is non-quantitative. target a well mixed sub-sample. </para>
-          <para>- - Size fractions 100-200 µm and 20-100-µm are retained, drained and transferred to a cryovial and then frozen at -20°C
-24 hrs after sampling</para>
-          <para>- Drain and replace ethanol of ethanol-preserved samples and note the date changed on the external jar labels and on the bongo event log sheet. </para>
-          <para>- Test pH of formalin sample sand add additional buffer if pH is &lt;7
-Post-cruise</para>
-          <para>- Ensure that samples get to respective labs and advise on which, if any, samples need additional ethanol changes.</para>
-          <para>2. Sampling protocol for vertical tow ring net
-Only seawater is used to collect the sample on the sieve to ready for preservation. The entire sample will go into a single jar with 95% ethanol (see notes below on removing gelatinous organisms). Ethanol will be changed 24hrs after initial preservation. </para>
-          <para>- Drain the contents into a 150-µm sieve, and use pre-filtered seawater to rinse the cod end. Make sure the mesh on the cod end is rinsed well. </para>
-          <para>- If there are a few large organisms in the sample (e.g. gelatinous or fish), remove them and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed. </para>
-          <para>- Transfer entire sample to a plastic 160z or 4oz jar depending on sample density.</para>
-          <para>- Make sure each sample has the correct internal and external label.</para>
-          <para>- Rinse all sieves and anything with sample on it with freshwater between all stations.</para>
-          <para>- Rinse all gear with freshwater when sampling has ended for the cruise.
-24 hrs after sampling</para>
-          <para>- Drain and replace ethanol of ethanol-preserved samples and note the date changed on the external jar labels and on the bongo event log sheet.</para>
-          <para>- Note the date changed on the external jar labels and on the ring net event log sheet. </para>
-          <para># Storage protocols post-cruise</para>
-          <para>Post-cruise sample allocation and storage:</para>
-          <para>Llopiz lab</para>
-          <para>- samples stored: </para>
-          <para>- - Ethanol-MorphID</para>
-          <para>- - Frozen SIA</para>
-          <para>- - Frozen Taxa-picking</para>
-          <para>- short term storage</para>
-          <para>- - samples are examined for proper preservation and ethanol is changed if needed, date of change is recorded on the jar.</para>
-          <para>- - a layer of electrical tape is wrapped around the opening of the jar to prevent evaporation</para>
-          <para>- - jars are placed in cardboard boxes organized roughly by cruise and date.</para>
-          <para>- - boxes are labeled with the cruise IDs and MVCO dates if applicable. </para>
-          <para>- - boxes of samples are stored in Llopiz lab: Redfield 226 with ethanol safety tag on outside of box.</para>
-          <para>- Long term storage</para>
-          <para>- - samples are moved to BioSpecs in Llopiz storage area. </para>
-          <para>- - in addition to the writing on box for short term storage, sticker labels available from Phil Alatalo at WHOI are affixed to the boxes and the accompanying data sheet online is filled out.</para>
-          <para>Rynearson Lab</para>
-          <para>- samples stored:</para>
-          <para>- - Ethanol-150-metabarcoding</para>
-          <para>- - Ethanol-335-metabarcoding</para>
-          <para>- - Samples are checked a) for proper, legible labeling and b) to ensure ethanol was exchanged after the initial fixation. If needed, labels are improved and ethanol is exchanged where not yet done.</para>
-          <para>- - Samples are stored in labeled cardboard boxes in drawers in the Rynearson lab.</para>
-          <para>Richardson working group</para>
-          <para>- - Formalin-MorphID</para>
-          <para>- - in plankton lab on NEFSC Narragansett campus in Narragansett, RI</para>
-          <para>- - Samples are shipped to Poland a maximum of 3 times a year.  These samples are processed following MARMAP NEFSC Sorting Protocols 5.3.1 ECOSYSTEM MONITORING - ZOOPLANKTON</para>
-          <para>- - what we receive back for each sample are:</para>
-          <para>- - - Ichthyoplankton:</para>
-          <para>- - - 1) vial of cephalopod paralarvae (not IDed to species)</para>
-          <para>- - - 2) vial of fish eggs (not IDed to species)</para>
-          <para>- - - 3) one vial of larval fish for each taxa</para>
-          <para>- - - Zooplankton</para>
-          <para>- - - 1) Quarter aliquot of the sample</para>
-          <para>- - - 2) vial of individuals for each taxa from the 400+ aliquot of individuals.  In some cases taxa are combined in the vials.</para>
-          <para>- - these are archived at the Narragansett Lab where we have samples dating back to the 1970s</para>
-          <para># Quality assurance and data package assembly</para>
-          <para>The inventory of physical samples from zooplankton net tows is compiled in a spreadsheet with validation for manual data entry. Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-zooplankton-transect-inventory.
-</para>
+          <markdown># Field Operations for Plankton Net Tows&#13;
+&#13;
+Here, we summarize the field operations for net tows, since the focus of this data package is on providing a detailed inventory of zooplankton samples collected at sea and processed on board. Field operations for net tows are documented in the associated abundance data package [knb-lter-nes.25.1]. Subsequent analyses of these samples, such as zooplankton abundance and stable isotopes, will be detailed in separate, dedicated data packages. Zooplankton abundance data package [knb-lter-nes.25.1] is available and encompasses ongoing data from 2018.  An event log data package [knb-lter-nes.20] for transect cruises with raw event log data is available. The metadata file included in this inventory package [nes-lter-zooplankton-tow-metadata-v2] includes all pertinent data that was extracted from and corrected from the electronic event logs. &#13;
+&#13;
+## Field Sampling Operations for Oblique Bongo/Ring Net Tow&#13;
+During dedicated Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises, zooplankton sampling occurs at each standard transect station (L1-L11 and in the vicinity of the Martha’s Vineyard Coastal Observatory, MVCO). Zooplankton is collected with 61-cm diameter bongo nets, one with a 335-µm mesh and the other with a 150-µm mesh. Both nets are 3.2 m long and have similar porosity values— 45% and 46%, respectively. The nets are conically shaped and taper down to a detachable cod end. A General Oceanics mechanical flowmeter is attached to the center of each bongo net mouth. A Star-Oddi DST centi-TD time-depth recorder (TDR) is attached to the bongo frame to record the net’s maximum depth, trajectory during the tow, and water temperature (to be accessed post-deployment). During the tow, the depth of the net is checked by measuring wire angle using a handheld inclinometer. Zooplankton sampling tows are conducted as single oblique (descending and then ascending only once), towing at a speed through the water of 1.5 to 2.0 knots. The target net depth is 5 m off the bottom, or 200 m when bottom depth exceeds 200 m. Winch pay-out and retrieval speeds follow NOAA’s EcoMon protocol, with the exception that our maximum pay-out speed is 30 m/min (e.g. when the target sampling depths are &gt;60 m, pay-out is at 30 m/min and retrieval is at 20 m/min). The bongo frame attaches to the end of the wire with a shackle. Attached to the bottom of the bongo frame is a ~1.5 ft section of chain and a 45 kg weight. &#13;
+&#13;
+In addition to the bongo nets, a 30-cm-diameter ring net with a mesh size of 20-µm is attached ~2 m above the bongo frame with a book clamp. This ring net is non-quantitative and is only used for size fractionated stable isotope analysis—specifically the 20-100 µm and 100-200 µm fractions.&#13;
+&#13;
+Deployment on the R/V Endeavor is off starboard side with one of the J-frame’s .322 wires. &#13;
+&#13;
+## Field Sampling Operations for Towing Vertical Ring Net Only&#13;
+During transect cruises with collaborators (e.g., Ocean Observatories Initiative in spring and fall through fall 2022), zooplankton are sampled at each regular transect station (L1-L11). Zooplankton are collected using a 30-cm ring net with a 150-µm mesh (2 m long, 46% porosity). A single vertical tow is conducted after lowering the weight to 1 m above the bottom, then positioning the net’s mouth 3 m above the seafloor, as determined by a CTD or onboard depth sounder. The R/V Armstrong uses a dynamic positioning system to maintain a stationary position during sampling. Winch payout and retrieval speeds are set to 30 m/min. These samples are non-quantitative. Fewer samples are collected on these cruises, resulting in many NAs in the metadata file [nes-lter-zooplankton-tow-metadata-v2] for Ring Net only entries.&#13;
+&#13;
+# Sampling Protocols&#13;
+&#13;
+## Sampling Protocol for Oblique Bongo/Ring Net Tow&#13;
+Upon retrieval, the nets are rinsed on the outside with a seawater hose to ensure that all plankton are collected in the cod ends. The cod ends are then carefully removed only after the water level is below the cod end opening, while positioned within a labeled and appropriate bucket. Labeled cod ends are then carried in their corresponding labeled buckets (distinguishing between the 335-µm and 150-µm mesh nets) into the wet lab for processing. In the wet laboratory, samples are split using a Folsom plankton splitter, and aliquots are processed according to established sample allocation. Aliquots are preserved in a 5% buffered formalin-seawater solution, 95% ethanol, or frozen, depending on the purpose of the sample. &#13;
+&#13;
+## Samples are split, allocated, and preserved as follows: &#13;
+&#13;
+### 335 µm mesh net:&#13;
+- - ¾ split into 5% buffered formalin-seawater solution for morphological identification (to Richardson lab at NOAA NEFSC)&#13;
+- - ¼ split in 95% ethanol for DNA metabarcoding (to Rynearson lab at URI)&#13;
+&#13;
+### 150 µm mesh net:&#13;
+- - ¼ split into 95% ethanol for morphological ID (to Llopiz lab at WHOI)&#13;
+- - ¼ split into 95% ethanol for DNA metabarcoding (to Rynearson lab at URI)&#13;
+- - ¼ split to be size fractionated on board (&gt;1000 µm, 500-1000 µm, and 200-500 µm) for stable isotope analyses. Size fractions are frozen (-20°C) in vials.&#13;
+- - ¼ split for fresh sorting on board and freezing of individual taxa (or the split will be frozen for later sorting of taxa in the lab) for stable isotope analyses—4 dominant taxa of copepods (e.g. Calanus, Centropages, Pseudocalanus, Oithona), as well as appendicularians and chaetognaths.&#13;
+&#13;
+### Detailed checklist of tasks and steps:&#13;
+&#13;
+#### Upon retrieval&#13;
+- Record flowmeter readings for each net.&#13;
+- Rinse the nets thoroughly from the outside, starting at the top and working down to the cod end.&#13;
+- If there are a few large organisms in the sample (e.g. jellies), remove them prior to splitting and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed. Note the removal and preservation of organisms in the Bongo/Ring Event Log, specifying the net from which they were extracted, and lab their jar accordingly. &#13;
+- Rinse all sieves and any equipment with sample residue between each sample.&#13;
+- Rinse all gear with freshwater upon completion of sampling for the cruise. &#13;
+&#13;
+#### For 335 µm sample:&#13;
+&#13;
+- - Split the sample with a Folsom plankton splitter.&#13;
+- - Put 3/4 of the 335 µm sample into a glass quart jar with formalin to a 12% formalin/seawater mix, buffer with 1:1 disodium phosphate:monosodium phosphate.&#13;
+- - Drain and gather the remaining ¼ split onto a ≤335-µm-mesh sieve and preserve in 95% ethanol using a glass pint jar. Jar should be at least 2/3’s full of ethanol and 1/3 or less of plankton.&#13;
+- - Ensure each sample is appropriately labeled both internally and externally.&#13;
+- - Store samples separately.&#13;
+&#13;
+#### For the 150 µm sample:&#13;
+&#13;
+- - Split the sample with a Folsom plankton splitter.&#13;
+- - Preserve two ¼ splits in 95% ethanol by draining and collecting each on a 150 µm mesh sieve and transferring to a plastic pint jar using a squirt bottle of ethanol. One sample is designated for the Llopiz lab, and the other for the Rynearson lab. &#13;
+- - One of the remaining ¼ splits gets size fractionated on 1000 µm, 500 µm, and 200 µm sieves, and what is collected on each sieve gets drained and transferred to a cryovial and then frozen at -20°C. &#13;
+- - The other ¼ split will be drained and frozen at maximum -20°C.&#13;
+- - Ensure each sample is appropriately labeled both internally and externally.&#13;
+- - Place ethanol-preserved splits in their appropriate boxes (Llopiz and Rynearson labs)&#13;
+&#13;
+#### For the 20 µm net sample:&#13;
+&#13;
+- - This sample is non-quantitative. Target a well-mixed sub-sample.&#13;
+- - Size fractions 100-200 µm and 20-100-µm are retained, drained and transferred to a cryovial and then frozen at -20°C.&#13;
+&#13;
+#### Size-fractionation:&#13;
+Zooplankton samples for stable isotope analysis originate from the 150 µm mesh bongo net and 20 µm ring net (no size-fractionated zooplankton collected from 335 µm). &#13;
+First, samples are split using a Folsom splitter and then separated by size using sieves of varying mesh sizes (metal sieves for 1000 µm, 500 µm, and 200 µm; and PVC fitted with mesh for the 100 µm and 20 µm sieves). During this process, samples are rinsed with filtered seawater only (not ethanol) to avoid contamination. A quarter (¼) of the sample collected with the 150 µm mesh net is apportioned for the &gt;1000 µm, 500-1000 µm, and 200-500 µm size-fractionated samples. The entire sample collected using the 20 µm ring net is apportioned/allocated to the 20-100 µm and 100-200 µm size fractions. Size fractions are drained, material transferred to cryovials and frozen in -20°C freezer. &#13;
+&#13;
+Size fractions:&#13;
+- From 150 µm mesh bongo net&#13;
+- - 1000 µm sieve (&gt; 1000 µm fraction)&#13;
+- - 500 µm sieve (500-1000 µm fraction)&#13;
+- - 200 µm sieve (200-500 µm fraction)&#13;
+- From 20 µm ring net&#13;
+- - 100 µm sieve (100-200 µm fraction)&#13;
+- - 20 µm sieve (20-100 µm fraction) &#13;
+&#13;
+#### 24 hrs after sampling&#13;
+- - Drain and replace the ethanol of ethanol-preserved samples. Note the date changed on the external jar labels and on the Bongo Event Log sheet.&#13;
+- - Test the pH of formalin samples and add additional buffer if the pH is &lt;7.&#13;
+&#13;
+#### Post-cruise&#13;
+- Ensure that samples are promptly delivered to their respective labs.&#13;
+- Advise on whether any samples require additional ethanol changes.&#13;
+&#13;
+### Sampling Protocol for Vertical Tow Ring Net&#13;
+Sieve the sample using only seawater and transfer it directly into the jar for preservation. The entire sample will go into a single jar with 95% ethanol. Ethanol will be changed 24hrs after initial preservation.&#13;
+&#13;
+#### Detailed checklist of tasks and steps:&#13;
+&#13;
+#### Upon retrieval&#13;
+- Drain the contents into a 150-µm sieve and use pre-filtered seawater to rinse the cod end. Make sure the mesh on the cod end is rinsed well.&#13;
+- If there are a few large organisms in the sample (e.g. gelatinous or fish), remove them and preserve them separately in ethanol. Use the large (~5 mm) sieve if needed.&#13;
+- Transfer the entire sample to a plastic 16 oz or 4 oz jar, depending on sample density.&#13;
+- Ensure each sample is appropriately labeled both internally and externally.&#13;
+- Rinse all sieves and anything with sample residue with freshwater between each station.&#13;
+- Rinse all gear with freshwater upon completion of sampling for the cruise.&#13;
+&#13;
+#### 24 hrs after sampling&#13;
+- - Drain and replace the ethanol of ethanol-preserved samples. Note the date changed on the external jar labels and on the Ring Net Event Log sheet.&#13;
+&#13;
+# Calculations&#13;
+&#13;
+Calculations for values in nes-lter-zooplankton-tow-metadata-v2.&#13;
+&#13;
+## Sampling Depth &#13;
+Data collected with the Star-Oddi DST centi-TD time-depth recorder (TDR) miniature temperature and pressure (depth) data logger is included in this package. The TDR is set up to collect data every second during the bongo nets descent and ascent. Sometimes the TDR had a depth offset, these values were corrected prior to data publishing, so the TDR depth reported here is correct. In some instances, the sampling depth (net maximum depth) was not recorded by the time-depth recorder (TDR) or the CTD attached to the bongo wire. When this occurred during oblique bongo tows, we estimated the maximum tow depth (in meters, necessary for calculating depth integrated meters squared abundance values) using the following equation based on the straight cosine law:&#13;
+Z = L * cos(α)&#13;
+&#13;
+Where:&#13;
+- Z = estimated maximum tow depth (in meters),&#13;
+- L = length of wire paid out (in meters),&#13;
+- Α = wire angle (in radians)&#13;
+&#13;
+For vertical tows, where no wire angle measurement is available, the net depth was assumed to be equal to the maximum wire paid out. When TDR, wire out, and wire angle information were unavailable, the target net depth was used as the net sampling depth. &#13;
+&#13;
+A secondary flag with comments provides information about when this estimation was used. The primary flag for these cases, where TDR/CTD depths are unavailable, is set to 3 (more on data flags below). &#13;
+&#13;
+The sampling depth is found in the net_max_depth_m column of the metadata file.&#13;
+&#13;
+## Volume of Water Filtered&#13;
+The volume of water filtered was calculated using the following equation:&#13;
+V = (R)(Ff)(A)&#13;
+Where:&#13;
+- V = calculated volume of water filtered (in meters cubed)&#13;
+- R = number of flowmeter revolutions during tow&#13;
+- Ff  = factory calibration factor (in meters per revolution) = 0.26873&#13;
+- A = area of net mouth (in meters squared) = 0.2922&#13;
+&#13;
+When flowmeters failed, the following equation was used to calculate volume of water filtered:&#13;
+&#13;
+V = (A)(T)(S)&#13;
+&#13;
+Where:&#13;
+- V = calculated volume of water filtered (in meters cubed)&#13;
+- A = area of net mouth (in meters squared) = 0.2922&#13;
+- T  = duration of tow (in seconds)&#13;
+- S = ship speed during tow (in meters per second)&#13;
+&#13;
+These values are recorded in the vol_filtered_m3_335 and vol_filtered_m3_150 columns of the metadata file. The comments indicate whether ship speed and tow duration were used instead of flowmeter readings to calculate the net volume sampled. &#13;
+&#13;
+## Standard Haul Factor&#13;
+&#13;
+Standard haul factors are provided to make different tows comparable. These were calculated using:&#13;
+&#13;
+For 10 meters squared:&#13;
+&#13;
+H = (Z * 10) / volume of water sampled (meters cubed)&#13;
+&#13;
+Where:&#13;
+- H = area (10 meters squared)&#13;
+- Z = Maximum tow depth (in meters) [net_max_depth_m column]&#13;
+&#13;
+For 100 meters cubed:&#13;
+&#13;
+H = 100 / volume of water sampled (meters cubed)&#13;
+&#13;
+Where:&#13;
+- H = volume (100 meters cubed) &#13;
+&#13;
+# Storage Protocols Post-Cruise&#13;
+&#13;
+Post-cruise sample allocation and storage:&#13;
+&#13;
+## Llopiz Lab&#13;
+&#13;
+### Preservation method:&#13;
+- - Morphological ID (MorphID): Ethanol&#13;
+- - Stable isotope size fractions (SIA): Frozen &#13;
+- - Taxa-picking: Frozen &#13;
+&#13;
+### Short Term Storage&#13;
+- - Samples are examined for proper preservation and ethanol is changed if needed. Date of change is recorded on the jar.&#13;
+- - A layer of electrical tape is wrapped around the opening of the jar to prevent evaporation.&#13;
+- - Jars are placed in cardboard boxes organized roughly by cruise and date.&#13;
+- - Boxes are labeled with the cruise IDs and MVCO dates if applicable.&#13;
+- - Boxes of samples are stored in Llopiz lab: Redfield 226 with ethanol safety tag on the outside of the box.&#13;
+&#13;
+### Long Term Storage&#13;
+- - Samples are transferred to BioSpecs in the Llopiz storage area.&#13;
+- - In addition to the writing on the box for short term storage, sticker labels available from Phil Alatalo at WHOI are affixed to the boxes and the accompanying data sheet online is filled out.&#13;
+&#13;
+## Rynearson Lab&#13;
+&#13;
+### Preservation method:&#13;
+- - Metabarcoding (DNA) 150 µm mesh net: Ethanol&#13;
+- - Metabarcoding (DNA) 335 µm mesh net: Ethanol&#13;
+&#13;
+### Long Term Storage&#13;
+- - Samples are checked a) for proper, legible labeling and b) to ensure ethanol was changed after the initial fixation. If needed, labels are improved, and ethanol is changed where not yet done.&#13;
+- - Samples are stored in labeled cardboard boxes in drawers in the Rynearson lab.&#13;
+&#13;
+## Richardson working group&#13;
+&#13;
+### Preservation method:&#13;
+- - Morphological ID (MorphID): Formalin&#13;
+&#13;
+### Short Term Storage&#13;
+- - In plankton lab on NEFSC Narragansett campus in Narragansett, RI.&#13;
+- - Samples are shipped to Poland a maximum of 3 times a year. These samples are processed following MARMAP NEFSC Sorting Protocols 5.3.1 ECOSYSTEM MONITORING - ZOOPLANKTON.&#13;
+&#13;
+### Long Term Storage:&#13;
+#### Received for archiving:&#13;
+&#13;
+##### Ichthyoplankton:&#13;
+&#13;
+- - - 1) Vial of cephalopod paralarvae (not ID’ed to species)&#13;
+- - - 2) Vial of fish eggs (not ID’ed to species)&#13;
+- - - 3) Vial (1) of larval fish for each taxon&#13;
+&#13;
+##### Zooplankton&#13;
+&#13;
+- - - 1) Quarter aliquot of the sample&#13;
+- - - 2) Vial of individuals for each taxon from the 400+ aliquot of individuals. In some cases taxa are combined in the vials.&#13;
+&#13;
+These samples are archived at the Narragansett Lab with samples dating back to the 1970s.&#13;
+&#13;
+# Notes on Cruises and Stations included&#13;
+&#13;
+Occasionally, the bongo net hits the sea floor during a tow, resulting in missed samples when there is no time to redeploy. Whenever possible, nets are rinsed and redeployed. In some cases, the sand and/or mud is sieved, and samples preserved. These occurrences are documented in the comment and data flags sections of the inventory data package. &#13;
+&#13;
+Bongo and ring net samples were not collected at the following cruises (stations), primarily due to time constraints, bad weather, or instances where the bongo hit the bottom without time for a redo: EN608 (L8), EN644 (L8), EN655 (L8, L11, MVCO), AR32 (L2, L4, L8, L9, MVCO), AR63 (L1, L3, L6, L8, L9, L10, L11, MVCO), AR38 (L1, L5, L8, MVCO), EN661 (L6, L7, L8, L9), AT46 (L10), and EN712 (L6). EN627 u11c was an opportunistic sample.&#13;
+&#13;
+The following cruises only used a 30-cm ring net (no bongo net) with a 150 µm mesh mainly for MorphID samples (for Llopiz lab): AR31A, AR39B, AR34B, AR31A, AR28B, AR61B, AR66B. These samples were all non-quantitative vertical tows (no oblique). In the inventory data, these cruises have “NA” for most of the sample inventory collection since they were not part of the protocol yet. These were cruises with OOI collaborators. Upcoming cruises will continue using the bongo net and its associated protocol for oblique tows to obtain quantitative zooplankton data (i.e., abundances).&#13;
+For cruises HRS2303 and AR77, only ship speed over ground is available, with no data on speed through water. Ship speed for cruise EN720 is not available yet as the cruise is too recent, so an estimated value of 2 knots was used.&#13;
+## Data Flags&#13;
+Data quality flags were assigned following the Ocean Best Practices UNESCO 2013 IOC 54:V3 IODE Quality Flag Standard  [Available here: https://www.iode.org/index.php?option=com_oe&amp;task=viewDocumentRecord&amp;docID=10762]: &#13;
+1: Good (passed documented required QC tests)&#13;
+2: Not evaluated, not available, or unknown (no QC test performed or information on quality is not available)&#13;
+3: Questionable/suspect or of high interest&#13;
+4: Bad (failed critical documented QC test(s) or as assigned by the data provider)&#13;
+Advanced Flagging Scheme&#13;
+In addition to the primary flags, the Ocean Best Practices UNESCO 2013 IOC 54:V3 standard also describes an advanced flagging scheme with more detailed commentary, helping to clarify and provide additional context. In this data set, this scheme includes comments such as:&#13;
+- Depth recorder (TDR) data not available. Net max depth was calculated based on wire information (cosine law).&#13;
+- Target depth used for net max depth due to unavailable TDR data and wire information.&#13;
+- Target depth used for net max depth due to unavailable wire data for Ring Net.&#13;
+# Quality assurance and data package assembly&#13;
+&#13;
+To ensure the accuracy of the entries for physical samples from zooplankton net tows, data was validated using R. This involved checking for ranges of values and unique strings in each column. All coordinates were plotted on a map to ensure that the values were within reasonable ranges. Errors in manually written latitude and longitude were fixed based on the ship’s event log entries. Entries were cross-referenced with the scanned Bongo/Ring Event Log sheets and the event log for each cruise. Missing values were identified, and NAs assigned. Documentation is available at https://github.com/cabanelas/nes_lter_zooplankton_inventory_v2.&#13;
+&#13;
+Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-zooplankton-transect-inventory.&#13;
+&#13;
+# Differences From Previous Version&#13;
+&#13;
+This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. New in this version is the tow metadata table. Methods were edited and updated. &#13;
+&#13;
+Cruises in v1: EN608, EN617, EN627, EN644, EN649, EN655, AR28B, AR31A, AR32, AR34B, AR38, AR39B, AR61B, AR63, EN657, and EN661. New cruises in v2: EN668, AT46, EN687, EN695, HRS2303, EN706, AR77, EN712, AR66B, EN715, and EN720 .&#13;
+&#13;
+# Related Packages &#13;
+&#13;
+Other related packages include event log data package [knb-lter-nes.20.1] and zooplankton abundance data package [knb-lter-nes.25.1] for transect cruises. &#13;
+&#13;
+</markdown>
         </description>
       </methodStep>
     </methods>
     <project>
-      <title>Northeast U.S. Shelf LTER</title>
+      <title>LTER: Scales of Variability in Ecosystem Dynamics and Production on the Changing Northeast U.S. Shelf (NES II)</title>
       <personnel>
         <individualName>
           <givenName>Heidi</givenName>
@@ -218,15 +407,6 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
         <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
         <role>Principal Investigator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>Stace</givenName>
-          <surName>Beaulieu</surName>
-        </individualName>
-        <electronicMailAddress>sbeaulieu@whoi.edu</electronicMailAddress>
-        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2609-5453</userId>
-        <role>Co-Principal Investigator</role>
       </personnel>
       <personnel>
         <individualName>
@@ -244,15 +424,6 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
         </individualName>
         <electronicMailAddress>rji@whoi.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-8839-5427</userId>
-        <role>Co-Principal Investigator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>Steven</givenName>
-          <surName>Lentz</surName>
-        </individualName>
-        <electronicMailAddress>slentz@whoi.edu</electronicMailAddress>
-        <userId directory="https://orcid.org">https://orcid.org/0000-0001-7498-0281</userId>
         <role>Co-Principal Investigator</role>
       </personnel>
       <personnel>
@@ -293,6 +464,15 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
       </personnel>
       <personnel>
         <individualName>
+          <givenName>Mei</givenName>
+          <surName>Sato</surName>
+        </individualName>
+        <electronicMailAddress>msato@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
           <givenName>Rachel</givenName>
           <surName>Stanley</surName>
         </individualName>
@@ -300,12 +480,34 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
         <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
         <role>Co-Principal Investigator</role>
       </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Weifeng</givenName>
+          <surName>Zhang</surName>
+        </individualName>
+        <electronicMailAddress>wzhang@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2819-1780</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
       <abstract>
         <para>The Northeast U.S. Shelf (NES) Long-Term Ecological Research (LTER) project integrates observations, experiments, and models to understand and predict how planktonic food webs are changing, and how those changes impact the productivity of higher trophic levels. The NES-LTER is co-located with the Northeast U.S. Continental Shelf Large Marine Ecosystem, spanning the Middle Atlantic Bight and Gulf of Maine. Our focal cross-shelf transect extends about 150 km southward from Martha’s Vineyard, MA, to just beyond the shelf break. Our overarching question is: How is climate change impacting the pelagic NES ecosystem and, in particular, affecting the relationship between compositional (e.g., species diversity and size structure) and aggregate (e.g., rates of primary production, and transfer of energy to important forage fish species) variability?</para>
       </abstract>
       <funding>
-        <para>NSF Award OCE-1655686</para>
+        <para>NSF Award OCE-2322676</para>
       </funding>
+      <relatedProject>
+        <title>LTER: Linking Pelagic Community Structure with Ecosystem Dynamics and Production Regimes on the Changing Northeast US Shelf (NES I)</title>
+        <personnel>
+          <individualName>
+            <givenName>Heidi</givenName>
+            <surName>Sosik</surName>
+          </individualName>
+          <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-1655686</funding>
+      </relatedProject>
       <relatedProject>
         <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
         <personnel>
@@ -314,386 +516,29 @@ Only seawater is used to collect the sample on the sieve to ready for preservati
             <surName>Sosik</surName>
           </individualName>
           <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <userId directory="https://orcid.org">0000-0002-4591-2842</userId>
           <role>Principal Investigator</role>
         </personnel>
-        <funding>NSF Award OCE-2102434</funding>
+        <award>
+          <funderName>National Science Foundation</funderName>
+          <awardNumber>NSF Award OCE-210243</awardNumber>
+          <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
+        </award>
+      </relatedProject>
+      <relatedProject>
+        <title>Management and Operation of the Ocean Observatories Initiative (OOI)</title>
+        <personnel>
+          <individualName>
+            <givenName>James</givenName>
+            <surName>Edson</surName>
+          </individualName>
+          <electronicMailAddress>jedson@whoi.edu</electronicMailAddress>
+          <userId directory="https://orcid.org">https://orcid.org/0000-0002-8777-031X</userId>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-1743430</funding>
       </relatedProject>
     </project>
-    <dataTable>
-      <entityName>nes-lter-zooplankton-transect-inventory</entityName>
-      <entityDescription>Zooplankton sample inventory for NES-LTER Transect cruises</entityDescription>
-      <physical>
-        <objectName>nes-lter-zooplankton-transect-inventory.csv</objectName>
-        <size unit="bytes">170740</size>
-        <authentication method="MD5">4f8dc07d80bfa9d6b8e3d0ee57a204a9</authentication>
-        <dataFormat>
-          <textFormat>
-            <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\r\n</recordDelimiter>
-            <attributeOrientation>column</attributeOrientation>
-            <simpleDelimited>
-              <fieldDelimiter>,</fieldDelimiter>
-              <quoteCharacter>"</quoteCharacter>
-            </simpleDelimited>
-          </textFormat>
-        </dataFormat>
-      </physical>
-      <attributeList>
-        <attribute>
-          <attributeName>cruise</attributeName>
-          <attributeDefinition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>station</attributeName>
-          <attributeDefinition>longitudinal stations along established NES-LTER transect and MVCO; if station does not begin with an L, it is an opportunistic sample collected off of the longitudinal transect.</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>longitudinal stations along established NES-LTER transect and MVCO; if station does not begin with an L, it is an opportunistic sample collected off of the longitudinal transect.</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>cast</attributeName>
-          <attributeDefinition>CTD rosette cast number chronological per cruise</attributeDefinition>
-          <storageType>float</storageType>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>dimensionless</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>natural</numberType>
-                <bounds>
-                  <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">45</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>cast_type</attributeName>
-          <attributeDefinition>oblique or vertical net casts</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>oblique</code>
-                    <definition>Single net or net pair oblique tow http://vocab.nerc.ac.uk/collection/B07/current/NDT007/</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>vertical</code>
-                    <definition>Single net or net pair vertical tow http://vocab.nerc.ac.uk/collection/B07/current/NDT001/</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>net_type</attributeName>
-          <attributeDefinition>type of net deployed</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>Ring</code>
-                    <definition>Gimbal-ring zooplankton sampler - Kozasa (1984) http://vocab.nerc.ac.uk/collection/L22/current/NETT0045/</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Bongo</code>
-                    <definition>Bongo net http://vocab.nerc.ac.uk/collection/L22/current/NETT0176/</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>mesh</attributeName>
-          <attributeDefinition>size of the mesh of the net used</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>150.0</code>
-                    <definition>size of mesh is 150 microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>335.0</code>
-                    <definition>size of mesh is 335 microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>20.0</code>
-                    <definition>size of mesh is 20 microns</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>purpose</attributeName>
-          <attributeDefinition>intention for collecting sample</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>DNA</code>
-                    <definition>used for meta-barcoding of entire sample</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>morphID</code>
-                    <definition>used for morphological identification</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>stableisotope</code>
-                    <definition>used for stable isotope analysis</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>taxapicking</code>
-                    <definition>used to select single taxa for stable isotopes, DNA barcoding, morphological ID, or other opportunistic analysis</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>other</code>
-                    <definition>use undecided</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>stableisotope_sizerange</attributeName>
-          <attributeDefinition>smaller to larger range of um of sample sieves</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>&gt;1000</code>
-                    <definition>ambient zooplankton greater than 1000 microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>&gt;500&amp;&lt;1000</code>
-                    <definition>ambient zooplankton greater than 500 and smaller than 1000 microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>&gt;200&amp;&lt;500</code>
-                    <definition>ambient zooplankton greater than 200 and smaller than 500microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>&gt;100&amp;&lt;200</code>
-                    <definition>ambient zooplankton greater than 100 and smaller than 200 microns</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>&gt;20&amp;&lt;100</code>
-                    <definition>ambient zooplankton greater than 20 and smaller than 100 microns</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>PI_recipient</attributeName>
-          <attributeDefinition>PI or lab that will be responsible for storing or processing the sample.</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>Rynearson</code>
-                    <definition>Tatiana Rynearson, URI</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Llopiz</code>
-                    <definition>Joel Llopiz, WHOI</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Richardson</code>
-                    <definition>David Richardson, NOAA NEFSC</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>fixative</attributeName>
-          <attributeDefinition>method of preservation used on the sample</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <enumeratedDomain>
-                  <codeDefinition>
-                    <code>EtOH</code>
-                    <definition>95% Ethanol</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>Frz</code>
-                    <definition>Frozen at minimum -20C</definition>
-                  </codeDefinition>
-                  <codeDefinition>
-                    <code>F/SW</code>
-                    <definition>12% formalin (buffered) and filtered seawater</definition>
-                  </codeDefinition>
-                </enumeratedDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>net_fraction</attributeName>
-          <attributeDefinition>if not whole net, the portion of the net that comprises the sample</attributeDefinition>
-          <storageType>float</storageType>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>dimensionless</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>real</numberType>
-                <bounds>
-                  <minimum exclusive="false">0.125</minimum>
-                  <maximum exclusive="false">1</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>no_of_jars</attributeName>
-          <attributeDefinition>if the sample is large and was split between multiple jars, record the number of jars or vials (jars used an synonym for whatever container type the sample is preserved in)</attributeDefinition>
-          <storageType>float</storageType>
-          <measurementScale>
-            <ratio>
-              <unit>
-                <standardUnit>dimensionless</standardUnit>
-              </unit>
-              <numericDomain>
-                <numberType>whole</numberType>
-                <bounds>
-                  <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">3</maximum>
-                </bounds>
-              </numericDomain>
-            </ratio>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>comments_logsheets</attributeName>
-          <attributeDefinition>comments from the paper fieldsheets</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>comments from the paper fieldsheets</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
-        </attribute>
-        <attribute>
-          <attributeName>comments_reMissingSample</attributeName>
-          <attributeDefinition>comments on why a sample is missing</attributeDefinition>
-          <storageType>string</storageType>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>comments on why a sample is missing</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Not Applicable</codeExplanation>
-          </missingValueCode>
-        </attribute>
-      </attributeList>
-      <numberOfRecords>976</numberOfRecords>
-    </dataTable>
   </dataset>
   <additionalMetadata>
     <metadata>

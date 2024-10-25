@@ -1,0 +1,25 @@
+attributeName,code,definition
+cast_type,oblique,Single net or net pair oblique tow http://vocab.nerc.ac.uk/collection/B07/current/NDT007/
+cast_type,vertical,Single net or net pair vertical tow http://vocab.nerc.ac.uk/collection/B07/current/NDT001/
+net_type,Ring,Gimbal-ring zooplankton sampler - Kozasa (1984) http://vocab.nerc.ac.uk/collection/L22/current/NETT0045/
+net_type,Bongo,Bongo net http://vocab.nerc.ac.uk/collection/L22/current/NETT0176/
+mesh,150,Mesh size is 150 microns.
+mesh,335,Mesh size is 335 microns. 
+mesh,20,Mesh size is 20 microns.
+purpose,DNA,Sample for DNA meta-barcoding of the entire sample.
+purpose,morphID,Sample for morphological identification.
+purpose,stableisotope,Sample for stable isotope analysis.
+purpose,taxapicking,"Used to select single taxa for stable isotopes, DNA barcoding, morphological ID, or other opportunistic analysis."
+purpose,other,Purpose to be determined. 
+stableisotope_sizerange,>1000,Ambient zooplankton greater than 1000 microns.
+stableisotope_sizerange,>500&<1000,Ambient zooplankton greater than 500 and smaller than 1000 microns.
+stableisotope_sizerange,>200&<500,Ambient zooplankton greater than 200 and smaller than 500 microns.
+stableisotope_sizerange,>100&<200,Ambient zooplankton greater than 100 and smaller than 200 microns.
+stableisotope_sizerange,>20&<100,Ambient zooplankton greater than 20 and smaller than 100 microns.
+stableisotope_sizerange,NA,"Not applicable, not size fractionated."
+PI_recipient,Rynearson,"Tatiana Rynearson, URI"
+PI_recipient,Llopiz,"Joel Llopiz, WHOI"
+PI_recipient,Richardson,"David Richardson, NOAA NEFSC"
+fixative,EtOH,95% Ethanol
+fixative,Frz,Frozen at a minimum of -20C.
+fixative,F/SW,12% formalin (buffered) and filtered seawater.

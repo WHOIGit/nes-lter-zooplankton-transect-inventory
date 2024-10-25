@@ -1,0 +1,15 @@
+attributeName,attributeDefinition,class,unit,dateTimeFormatString,missingValueCode,missingValueCodeExplanation
+cruise,"Identifier for research cruise, generally including abbreviation for research vessel and voyage number",character,dimensionless,,NA,Missing value
+station,"Longitudinal stations along established NES-LTER transect and MVCO. If a station does not begin with an 'L', it is an opportunistic sample collected off the longitudinal transect.",character,dimensionless,,NA,Missing value
+cast,Chronological CTD rosette cast number per cruise.,numeric,dimensionless,,NA,Missing value
+cast_type,Type of nest cast: oblique or vertical.,categorical,dimensionless,,NA,Missing value
+net_type,Type of net deployed: Bongo or ring.,categorical,dimensionless,,NA,Missing value
+mesh,Mesh size of the net used.,categorical,dimensionless,,NA,Missing value
+purpose,Purpose for collecting the sample.,categorical,dimensionless,,NA,Missing value
+stableisotope_sizerange,"Size range (in micron) of sample size fractions, from smaller to larger. ",categorical,dimensionless,,NA,Missing value
+PI_recipient,Principal investigation (PI) or lab responsible for storing or processing the sample.,categorical,dimensionless,,NA,Missing value
+fixative,Method of preservation used on the sample.,categorical,dimensionless,,NA,Missing value
+net_fraction,Fraction of the sample jar used for a respective sample from each net. ,numeric,dimensionless,,NA,Missing value
+no_of_jars,Number of jars or containers used for the sample. ,numeric,dimensionless,,NA,Missing value
+comments_logsheets,Comments from the paper field sheets.,character,dimensionless,,NA,Missing value
+comments_reMissingSample,Comments explaining why a sample is missing.,character,dimensionless,,NA,Not Applicable
