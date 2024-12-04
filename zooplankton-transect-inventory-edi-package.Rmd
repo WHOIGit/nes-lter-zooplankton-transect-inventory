@@ -17,6 +17,7 @@ library(EMLassemblyline)
 library(ediutilities)
 library(here)
 library(lubridate)
+library(dplyr)
 ```
 
 Read data tables
@@ -24,12 +25,33 @@ Read data tables
 ```{r}
 
 inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2.csv'))
-meta <- read.csv(here('nes-lter-zooplankton-tow-metadata-v2.csv'))
+# inventory is ready to submit as-is
+
+```
+
+```{r}
+
+meta <- read.csv(here('nes-lter-zooplankton-tow-metadata-v2-input.csv'))
 meta$datetime_UTC_start <- dmy_hms(paste(meta$date_start_UTC, meta$time_start_UTC))
 meta$datetime_UTC_end <- dmy_hms(paste(meta$date_end_UTC, meta$time_end_UTC))
 
-# can write to csv because the data_table is already clean and ready to submit  
-#write.csv(data_table, 'nes-lter-zooplankton-transect-inventory.csv', row.names=FALSE)
+meta <- meta |> 
+  relocate(datetime_UTC_start, .after = sample_name) |>
+  relocate(datetime_UTC_end, .before = lat_start) |>
+  select(-date_start_UTC, -time_start_UTC, -date_end_UTC, -time_end_UTC) |>
+  rename(event = sample_name) |>
+  rename(decimalLatitudeStart = lat_start) |>
+  rename(decimalLongitudeStart = lon_start) |>
+  rename(decimalLatitudeEnd= lat_end) |>
+  rename(decimalLongitudeEnd = lon_end) |>
+  rename(net_max_depth = net_max_depth_m) |>
+  rename(max_wire_out = max_wire_out_m) |>
+  rename(wire_rate_out = wire_rate_out_m_min) |>
+  rename(wire_rate_in = wire_rate_in_m_min) |>
+  rename(vol_filtered_335 = vol_filtered_m3_335)|>
+  rename(vol_filtered_150 = vol_filtered_m3_150)
+
+write.csv(meta, 'nes-lter-zooplankton-tow-metadata-v2.csv', row.names=FALSE)
 
 ```
 
@@ -43,6 +65,7 @@ EMLassemblyline
 write.table(read.csv("nes-lter-zooplankton-tow-metadata-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-tow-metadata-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-categoricalVariablesHeaders.csv", sep=","), "catvars_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+write.table(read.csv("nes-lter-zooplankton-tow-metadata-v2-categoricalVariablesHeaders.csv", sep=","), "catvars_nes-lter-zooplankton-tow-metadata-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 write.table(read.csv("personnel.csv", sep=","), "personnel.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 
 ```
@@ -64,7 +87,7 @@ make_eml(path = here(),
          data.table.quote.character = c('"','"'),
          temporal.coverage = temp_coverage,
          geographic.description = "NES-LTER Transect",
-         geographic.coordinates = geographic_coordinates(meta$lat_start, meta$lon_start), # Not including end-of-tow coordinates
+         geographic.coordinates = geographic_coordinates(meta$decimalLatitudeStart, meta$decimalLongitudeStart), # Not including end-of-tow coordinates
          maintenance.description = "ongoing",
          user.id = "NES",
          user.domain = "LTER",
