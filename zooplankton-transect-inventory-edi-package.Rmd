@@ -49,7 +49,8 @@ meta <- meta |>
   rename(wire_rate_out = wire_rate_out_m_min) |>
   rename(wire_rate_in = wire_rate_in_m_min) |>
   rename(vol_filtered_335 = vol_filtered_m3_335)|>
-  rename(vol_filtered_150 = vol_filtered_m3_150)
+  rename(vol_filtered_150 = vol_filtered_m3_150) |>
+  mutate(across(c(vol_filtered_335, vol_filtered_150, haul_factor_10m2_335, haul_factor_10m2_150, haul_factor_100m3_335,      haul_factor_100m3_150), \(x) round(x, 3)))
 
 write.csv(meta, 'nes-lter-zooplankton-tow-metadata-v2.csv', row.names=FALSE)
 
