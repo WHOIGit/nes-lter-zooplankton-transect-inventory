@@ -249,7 +249,7 @@ Data package assembly with metadata templates was completed in R, with documenta
 
 # Differences From Previous Version
 
-This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. New in this version is the tow metadata table. Methods were edited and updated. Some column names and descriptions were updated.
+This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. The tow metadata table is new in this version. Methods were edited and updated. Some column names and descriptions were updated. The year in the title was updated to reflect the correct initial collection date. 
 
 Cruises in v1: EN608, EN617, EN627, EN644, EN649, EN655, AR28B, AR31A, AR32, AR34B, AR38, AR39B, AR61B, AR63, EN657, and EN661. New cruises in v2: EN668, AT46, EN687, EN695, HRS2303, EN706, AR77, EN712, AR66B, EN715, and EN720 .
 

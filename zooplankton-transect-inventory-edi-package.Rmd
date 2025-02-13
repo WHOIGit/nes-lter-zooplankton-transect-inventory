@@ -80,7 +80,7 @@ temp_coverage <- temporal_coverage(meta$datetime_UTC_start)
 pkg_id <- 'knb-lter-nes.24.2'
 
 make_eml(path = here(),
-         dataset.title ='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         dataset.title ='Zooplankton sample inventory for Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2018',
          data.table = c('nes-lter-zooplankton-transect-inventory-v2.csv', 'nes-lter-zooplankton-tow-metadata-v2.csv'),
          #data.table = c('inventory.csv', 'meta.csv'),
          data.table.description = c('Zooplankton sample inventory for NES-LTER Transect cruises', 'Zooplankton tow metadata for NES-LTER Transect cruises'),
