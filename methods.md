@@ -110,7 +110,7 @@ Z = L * cos(α)
 Where:
 - Z = estimated maximum tow depth (in meters),
 - L = length of wire paid out (in meters),
-- Α = wire angle (in radians)
+- α = wire angle (in radians)
 
 For vertical tows, where no wire angle measurement is available, the net depth was assumed to be equal to the maximum wire paid out. When TDR, wire out, and wire angle information were unavailable, the target net depth was used as the net sampling depth. 
 
@@ -245,11 +245,13 @@ In addition to the primary flags, the Ocean Best Practices UNESCO 2013 IOC 54:V3
 
 To ensure the accuracy of the entries for physical samples from zooplankton net tows, data was validated using R. This involved checking for ranges of values and unique strings in each column. All coordinates were plotted on a map to ensure that the values were within reasonable ranges. Errors in manually written latitude and longitude were fixed based on the ship’s event log entries. Entries were cross-referenced with the scanned Bongo/Ring Event Log sheets and the event log for each cruise. Missing values were identified, and NAs assigned. Documentation is available at https://github.com/cabanelas/nes\_lter\_zooplankton\_inventory\_v2.
 
+Some casts appear in the metadata table and not in the inventory table, due to reasons such as the cast being designated for flowmeter calibration or the sea state prohibiting sample collection. 
+
 Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-zooplankton-transect-inventory.
 
 # Differences From Previous Version
 
-This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. The tow metadata table is new in this version. Methods were edited and updated. Some column names and descriptions were updated. The year in the title was updated to reflect the correct initial collection date. 
+This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. The tow metadata table is new in this version. Methods were edited and updated. Some column names and descriptions were updated. The year in the title and abstract was updated to reflect the correct initial collection date. 
 
 Cruises in v1: EN608, EN617, EN627, EN644, EN649, EN655, AR28B, AR31A, AR32, AR34B, AR38, AR39B, AR61B, AR63, EN657, and EN661. New cruises in v2: EN668, AT46, EN687, EN695, HRS2303, EN706, AR77, EN712, AR66B, EN715, and EN720 .
 

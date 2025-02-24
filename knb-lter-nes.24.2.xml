@@ -70,9 +70,9 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-0389-2206</userId>
       <role>technician</role>
     </associatedParty>
-    <pubDate>2025-02-13</pubDate>
+    <pubDate>2025-02-24</pubDate>
     <abstract>
-      <para>This dataset provides an inventory of physical samples collected from zooplankton bongo and/or ring net tows conducted during the Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017. The NES-LTER transect, located south of Martha’s Vineyard, Massachusetts, comprises standard stations L1-L11 and extends 150 km offshore. Dedicated NES-LTER cruises target all four seasons: winter, spring, summer, and fall. Samples are collected via oblique tows with a 61-cm bongo net fitted with 150- and 335-micron mesh nets, as well as a ring net with a 20-micron mesh net. During earlier spring and fall cruises along the NES-LTER Transect, in collaboration with the Ocean Observatories Initiative, samples were collected through vertical tows using a ring net with a 150-micron mesh. Samples collected are distributed among various laboratories for DNA metabarcoding, stable isotopes analysis, and morphological identification. </para>
+      <para>This dataset provides an inventory of physical samples collected from zooplankton bongo and/or ring net tows conducted during the Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2018. The NES-LTER transect, located south of Martha’s Vineyard, Massachusetts, comprises standard stations L1-L11 and extends 150 km offshore. Dedicated NES-LTER cruises target all four seasons: winter, spring, summer, and fall. Samples are collected via oblique tows with a 61-cm bongo net fitted with 150- and 335-micron mesh nets, as well as a ring net with a 20-micron mesh net. During earlier spring and fall cruises along the NES-LTER Transect, in collaboration with the Ocean Observatories Initiative, samples were collected through vertical tows using a ring net with a 150-micron mesh. Samples collected are distributed among various laboratories for DNA metabarcoding, stable isotopes analysis, and morphological identification. </para>
     </abstract>
     <keywordSet>
       <keyword>populations</keyword>
@@ -107,6 +107,10 @@
 We’d like to thank additional personnel who conducted bongo tow sampling on Transect cruises, including Sarah G. Glancy, Isabel Honda, Stace Beaulieu, Taylor Crockford, Emily Peacock, Diana Fontaine, Julia Cox, Thomas Heine, Pierre Marrec, Adrienne Breef-Pilz, John San Soucie, Helena McMonagle, Justin Suca, and many others that have assisted with NES-LTER sampling. Sampling wouldn’t have been possible without the hard work of the ship technicians, marine techs, engineers, winch operators, and the entire ship crew. Thank you all for your efforts!
 </para>
     </additionalInfo>
+    <intellectualRights>
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
+</para>
+    </intellectualRights>
     <coverage>
       <geographicCoverage>
         <geographicDescription>NES-LTER Transect</geographicDescription>
@@ -251,7 +255,7 @@ Z = L * cos(α)
 Where:
 - Z = estimated maximum tow depth (in meters),
 - L = length of wire paid out (in meters),
-- Α = wire angle (in radians)
+- α = wire angle (in radians)
 
 For vertical tows, where no wire angle measurement is available, the net depth was assumed to be equal to the maximum wire paid out. When TDR, wire out, and wire angle information were unavailable, the target net depth was used as the net sampling depth. 
 
@@ -386,11 +390,13 @@ In addition to the primary flags, the Ocean Best Practices UNESCO 2013 IOC 54:V3
 
 To ensure the accuracy of the entries for physical samples from zooplankton net tows, data was validated using R. This involved checking for ranges of values and unique strings in each column. All coordinates were plotted on a map to ensure that the values were within reasonable ranges. Errors in manually written latitude and longitude were fixed based on the ship’s event log entries. Entries were cross-referenced with the scanned Bongo/Ring Event Log sheets and the event log for each cruise. Missing values were identified, and NAs assigned. Documentation is available at https://github.com/cabanelas/nes\_lter\_zooplankton\_inventory\_v2.
 
+Some casts appear in the metadata table and not in the inventory table, due to reasons such as the cast being designated for flowmeter calibration or the sea state prohibiting sample collection. 
+
 Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-zooplankton-transect-inventory.
 
 # Differences From Previous Version
 
-This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. The tow metadata table is new in this version. Methods were edited and updated. Some column names and descriptions were updated. The year in the title was updated to reflect the correct initial collection date. 
+This is the second version of the NES-LTER zooplankton inventory data package [knb-lter-nes24.2]. The previous data package [knb-lter-nes24.1] included sample inventory data for 16 cruises; version two adds 11 for a total of 27 cruises. The tow metadata table is new in this version. Methods were edited and updated. Some column names and descriptions were updated. The year in the title and abstract was updated to reflect the correct initial collection date. 
 
 Cruises in v1: EN608, EN617, EN627, EN644, EN649, EN655, AR28B, AR31A, AR32, AR34B, AR38, AR39B, AR61B, AR63, EN657, and EN661. New cruises in v2: EN668, AT46, EN687, EN695, HRS2303, EN706, AR77, EN712, AR66B, EN715, and EN720 .
 
@@ -559,8 +565,8 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
       <entityDescription>Zooplankton sample inventory for NES-LTER Transect cruises</entityDescription>
       <physical>
         <objectName>nes-lter-zooplankton-transect-inventory-v2.csv</objectName>
-        <size unit="bytes">261715</size>
-        <authentication method="MD5">932efff2c54e3e5ec8bb74068b112fcc</authentication>
+        <size unit="bytes">296453</size>
+        <authentication method="MD5">7cf95ed3edd025b2a13c8a639c8ce2e4</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -873,7 +879,898 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
       </attributeList>
       <numberOfRecords>2187</numberOfRecords>
     </dataTable>
+    <dataTable>
+      <entityName>nes-lter-zooplankton-tow-metadata</entityName>
+      <entityDescription>Zooplankton tow metadata for NES-LTER Transect cruises</entityDescription>
+      <physical>
+        <objectName>nes-lter-zooplankton-tow-metadata-v2.csv</objectName>
+        <size unit="bytes">107097</size>
+        <authentication method="MD5">8731c9a285187a7b56958ac4e8c09d9b</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>cruise</attributeName>
+          <attributeDefinition>Identifier for research cruise, generally including abbreviation for research vessel and voyage number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identifier for research cruise, generally including abbreviation for research vessel and voyage number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>station</attributeName>
+          <attributeDefinition>NES-LTER standard station nearest to the sample location</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>NES-LTER standard station nearest to the sample location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>cast</attributeName>
+          <attributeDefinition>CTD rosette cast number chronological per cruise</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>CTD rosette cast number chronological per cruise</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>event</attributeName>
+          <attributeDefinition>Sample identifier formatted as cruise_station_cast</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sample identifier formatted as cruise_station_cast</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>datetime_UTC_start</attributeName>
+          <attributeDefinition>Date and time event started in UTC</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>datetime_UTC_end</attributeName>
+          <attributeDefinition>Date and time event ended in UTC</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLatitudeStart</attributeName>
+          <attributeDefinition>Latitude at net deployment</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">39.7509</minimum>
+                  <maximum exclusive="false">41.524</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLongitudeStart</attributeName>
+          <attributeDefinition>Longitude at net deployment</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-71.0547</minimum>
+                  <maximum exclusive="false">-70.527048</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLatitudeEnd</attributeName>
+          <attributeDefinition>Latitude at net recovery</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">39.7377</minimum>
+                  <maximum exclusive="false">41.327</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLongitudeEnd</attributeName>
+          <attributeDefinition>Longitude at net recovery</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-71.0559</minimum>
+                  <maximum exclusive="false">-70.524907</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth_bottom</attributeName>
+          <attributeDefinition>Depth of the seafloor in sampling area http://vocab.nerc.ac.uk/collection/P09/current/BATH/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">12</minimum>
+                  <maximum exclusive="false">1830</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth_target</attributeName>
+          <attributeDefinition>Target depth of net in meters (usually 5 m off the bottom or 200 m max)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">6</minimum>
+                  <maximum exclusive="false">200</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth_TDR</attributeName>
+          <attributeDefinition>Maximum depth of bongo frame as recorded by TDR</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">5.4</minimum>
+                  <maximum exclusive="false">268</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>net_max_depth</attributeName>
+          <attributeDefinition>Maximum depth sampled by zooplankton nets</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">6.3</minimum>
+                  <maximum exclusive="false">438</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>avg_angle</attributeName>
+          <attributeDefinition>Average angle of winch wire during oblique tows estimated with a handheld inclinometer</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">15</minimum>
+                  <maximum exclusive="false">60</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>max_wire_out</attributeName>
+          <attributeDefinition>Maximum length of winch wire deployed during the tow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">7</minimum>
+                  <maximum exclusive="false">438</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wire_rate_out</attributeName>
+          <attributeDefinition>Rate at which the zooplankton net winch wire was deployed</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerMinute</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">5</minimum>
+                  <maximum exclusive="false">30</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wire_rate_in</attributeName>
+          <attributeDefinition>Rate at which the zooplankton net winch wire was retrieved</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerMinute</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">4</minimum>
+                  <maximum exclusive="false">30</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>STW_start</attributeName>
+          <attributeDefinition>Ship speed through water at the start of the tow. Used to calculate volume sampled when flowmeters fail</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>knot</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">10.6</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SOG_start</attributeName>
+          <attributeDefinition>Ship speed over ground at the start of the tow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>knot</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.02</minimum>
+                  <maximum exclusive="false">10.31</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>STW_end</attributeName>
+          <attributeDefinition>Ship speed through water at the end of the tow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>knot</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.02</minimum>
+                  <maximum exclusive="false">3.01</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SOG_end</attributeName>
+          <attributeDefinition>Ship speed over ground at the end of the tow</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>knot</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.15</minimum>
+                  <maximum exclusive="false">6.9</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flowmeter_sn_335</attributeName>
+          <attributeDefinition>Serial number of flowmeter used in 335 micron net  (typically 29914)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">28517</minimum>
+                  <maximum exclusive="false">29914</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow_start_335</attributeName>
+          <attributeDefinition>Starting flowmeter value for 335 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">19</minimum>
+                  <maximum exclusive="false">999928</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow_end_335</attributeName>
+          <attributeDefinition>Ending flowmeter value for 335 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">2472</minimum>
+                  <maximum exclusive="false">999927</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>tot_flow_counts_335</attributeName>
+          <attributeDefinition>Difference between flow_start_335 and flow_end_335</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">326</minimum>
+                  <maximum exclusive="false">946486</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>vol_filtered_335</attributeName>
+          <attributeDefinition>Volume of water sampled by the 335 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meterCubed</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">33.286</minimum>
+                  <maximum exclusive="false">818.146</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NOAA_335</attributeName>
+          <attributeDefinition>NOAA sample collected in 335 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Sample was collected for NOAA from 335 micron net</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No sample was collected for NOAA from 335 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DNA_335</attributeName>
+          <attributeDefinition>DNA sample collected in 335 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Sample was collected for DNA from 335 micron net</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No sample was collected for DNA from 335 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flowmeter_sn_150</attributeName>
+          <attributeDefinition>Serial number of flowmeter  used in 150 micron net (typically 29913)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">28517</minimum>
+                  <maximum exclusive="false">29914</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow_start_150</attributeName>
+          <attributeDefinition>Starting flowmeter value for 150 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">9</minimum>
+                  <maximum exclusive="false">996096</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow_end_150</attributeName>
+          <attributeDefinition>Ending flowmeter value for 150 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">96</minimum>
+                  <maximum exclusive="false">996095</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>tot_flow_counts_150</attributeName>
+          <attributeDefinition>Difference between flow_start_150 and flow_end_150</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1432</minimum>
+                  <maximum exclusive="false">303328</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>vol_filtered_150</attributeName>
+          <attributeDefinition>Volume of water sampled by the 150 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meterCubed</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">30.074</minimum>
+                  <maximum exclusive="false">800.196</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>morph_ID_150</attributeName>
+          <attributeDefinition>MorphID sample collected in 150 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Sample was collected for NOAA from 335 micron net</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No sample was collected for NOAA from 335 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DNA_150</attributeName>
+          <attributeDefinition>DNA sample collected in 150 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Sample was collected for DNA from 150 micron net</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No sample was collected for DNA from 150 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>size_fract_150</attributeName>
+          <attributeDefinition>Were any size fractions sample collected from 150 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Size fractioned sample was collected. Various size fractions are taken from this net; if any were taken this is marked as Yes even if some are missing.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No size fractions were collected from 150 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>taxa_pick_150</attributeName>
+          <attributeDefinition>Taxa picking sample collected in 150 micron net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Taxa picking sample was collected from 150 micron net</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No taxa picking sample was collected from 150 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>size_fract_20</attributeName>
+          <attributeDefinition>Were any size fractions sample collected from 20 micron ring net?</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Size fractioned sample was collected. Various size fractions are taken from this net; if any were taken this is marked as Yes even if some are missing.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No size fractions were collected from 20 micron net</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>haul_factor_10m2_335</attributeName>
+          <attributeDefinition>Surface area standard haul factor for the 335 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.326</minimum>
+                  <maximum exclusive="false">19.426</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>haul_factor_10m2_150</attributeName>
+          <attributeDefinition>Surface area standard haul factor for the 150 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.326</minimum>
+                  <maximum exclusive="false">20.099</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>haul_factor_100m3_335</attributeName>
+          <attributeDefinition>Volumetric standard haul factor for the 335 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.122</minimum>
+                  <maximum exclusive="false">3.004</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>haul_factor_100m3_150</attributeName>
+          <attributeDefinition>Volumetric standard haul factor for the 150 micron net</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.125</minimum>
+                  <maximum exclusive="false">3.325</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>comments</attributeName>
+          <attributeDefinition>Detailed comments from physical bongo event log sheets</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Detailed comments from physical bongo event log sheets</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>primary_flag</attributeName>
+          <attributeDefinition>IODE Quality Flag primary level</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>not evaluated</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>questionable/suspect</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>bad</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>missing data</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>secondary_flag</attributeName>
+          <attributeDefinition>Additional context for application of a primary flag other than 1</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Additional context for application of a primary flag other than 1</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>281</numberOfRecords>
+    </dataTable>
   </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="meterPerMinute" multiplierToSI="60" name="meterPerMinute" parentSI="meterPerSecond" unitType="speed">
+          <description>meters per minute</description>
+        </unit>
+        <unit id="./" multiplierToSI="" name="" parentSI="" unitType="">
+          <description/>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
   <additionalMetadata>
     <metadata>
       <emlEditor>

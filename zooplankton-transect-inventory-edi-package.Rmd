@@ -24,16 +24,15 @@ Read data tables
 
 ```{r}
 
-inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2.csv'))
-# inventory is ready to submit as-is
-
-```
-
-```{r}
-
 meta <- read.csv(here('nes-lter-zooplankton-tow-metadata-v2-input.csv'))
 meta$datetime_UTC_start <- dmy_hms(paste(meta$date_start_UTC, meta$time_start_UTC))
 meta$datetime_UTC_end <- dmy_hms(paste(meta$date_end_UTC, meta$time_end_UTC))
+
+#put cruises in chronological order
+meta <- meta[order(meta$datetime_UTC_start),]
+#save this order, then order rows by cruise and cast
+meta_cruises <- unique(meta$cruise)
+meta <- meta[with(meta, order(match(cruise, meta_cruises), cast)),]
 
 meta <- meta |> 
   relocate(datetime_UTC_start, .after = sample_name) |>
@@ -50,9 +49,40 @@ meta <- meta |>
   rename(wire_rate_in = wire_rate_in_m_min) |>
   rename(vol_filtered_335 = vol_filtered_m3_335)|>
   rename(vol_filtered_150 = vol_filtered_m3_150) |>
-  mutate(across(c(vol_filtered_335, vol_filtered_150, haul_factor_10m2_335, haul_factor_10m2_150, haul_factor_100m3_335,      haul_factor_100m3_150), \(x) round(x, 3)))
+  mutate(net_max_depth = round(net_max_depth, 2)) |>
+  mutate(across(c(vol_filtered_335, vol_filtered_150, haul_factor_10m2_335, haul_factor_10m2_150, haul_factor_100m3_335, haul_factor_100m3_150), \(x) round(x, 3)))
 
 write.csv(meta, 'nes-lter-zooplankton-tow-metadata-v2.csv', row.names=FALSE)
+
+```
+
+```{r}
+
+inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2-input.csv'))
+
+#set case of cruise column
+inventory$cruise <- toupper(inventory$cruise)
+
+# check for any differences in cruise ID between inventory and meta
+inv_cruises <- unique(inventory$cruise)
+setdiff(inv_cruises, meta_cruises)
+
+#match metadata table order of cruises and casts
+inventory <- inventory[with(inventory, order(match(cruise, meta_cruises), cast)),]
+
+write.csv(inventory, 'nes-lter-zooplankton-transect-inventory-v2.csv', row.names=FALSE)
+
+```
+Check for discrepancies between casts in the two tables
+
+```{r}
+
+meta$cruisecast <- paste0(meta$cruise, "-", meta$cast)
+inventory$cruisecast <- paste0(inventory$cruise, "-", inventory$cast)
+setdiff(meta$cruisecast, inventory$cruisecast)
+#is.element("EN644-9", meta$cruisecast) #TRUE
+#is.element("EN644-9", inventory$cruisecast) #FALSE
+#v2: four casts are in metadata table and not in inventory (no sample collected)
 
 ```
 
@@ -64,12 +94,19 @@ EMLassemblyline
 #excel_to_template(here('NES-LTER_Transect_Sample_Inventory'), 'nes-lter-zooplankton', rights='CC0', file_type=".md")
 
 write.table(read.csv("nes-lter-zooplankton-tow-metadata-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-tow-metadata-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+
 write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-column-headers.csv", sep=","), "attributes_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+
 write.table(read.csv("nes-lter-zooplankton-transect-inventory-v2-categoricalVariablesHeaders.csv", sep=","), "catvars_nes-lter-zooplankton-transect-inventory-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+
 write.table(read.csv("nes-lter-zooplankton-tow-metadata-v2-categoricalVariablesHeaders.csv", sep=","), "catvars_nes-lter-zooplankton-tow-metadata-v2.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
+
 write.table(read.csv("personnel.csv", sep=","), "personnel.txt", quote = FALSE, na="", sep="\t", row.names = FALSE)
 
+template_core_metadata(path = here(), license = 'CC0', file.type = ".md")
+
 ```
+
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
