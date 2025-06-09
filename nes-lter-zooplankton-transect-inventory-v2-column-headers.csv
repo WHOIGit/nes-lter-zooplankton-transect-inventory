@@ -9,7 +9,7 @@ purpose,Intended use of sample,categorical,dimensionless,,,
 stableisotope_sizerange,Size range of sample size fractions,categorical,dimensionless,,,
 PI_recipient,Principal investigator or lab responsible for storing or processing the sample,categorical,dimensionless,,,
 fixative,Method of preservation used on the sample,categorical,dimensionless,,,
-net_fraction,Fraction of the sample jar used for a respective sample from each net,numeric,dimensionless,,,
+net_fraction,Fraction of the sample jar used for a respective sample from each net,numeric,dimensionless,,"""NA""",not available
 no_of_jars,The number of sample vessels preserved from the catch,numeric,dimensionless,,,
 comments_logsheets,Comments from the paper field sheets,character,dimensionless,,,
 comments_reMissingSample,Comments explaining why a sample is missing,character,dimensionless,,,

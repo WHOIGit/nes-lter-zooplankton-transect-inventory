@@ -18,11 +18,15 @@ library(ediutilities)
 library(here)
 library(lubridate)
 library(dplyr)
+#library(stringr)
+
 ```
 
 Read data tables
 
 ```{r}
+
+# Metadata table
 
 meta <- read.csv(here('nes-lter-zooplankton-tow-metadata-v2-input.csv'))
 meta$datetime_UTC_start <- dmy_hms(paste(meta$date_start_UTC, meta$time_start_UTC))
@@ -32,17 +36,16 @@ meta$datetime_UTC_end <- dmy_hms(paste(meta$date_end_UTC, meta$time_end_UTC))
 meta <- meta[order(meta$datetime_UTC_start),]
 #save this order, then order rows by cruise and cast
 meta_cruises <- unique(meta$cruise)
-meta <- meta[with(meta, order(match(cruise, meta_cruises), cast)),]
 
+# reorder and tidy column names
 meta <- meta |> 
   relocate(datetime_UTC_start, .after = sample_name) |>
   relocate(datetime_UTC_end, .before = lat_start) |>
   select(-date_start_UTC, -time_start_UTC, -date_end_UTC, -time_end_UTC) |>
-  rename(event = sample_name) |>
-  rename(decimalLatitudeStart = lat_start) |>
-  rename(decimalLongitudeStart = lon_start) |>
-  rename(decimalLatitudeEnd= lat_end) |>
-  rename(decimalLongitudeEnd = lon_end) |>
+  rename(latitude_start = lat_start) |>
+  rename(longitude_start = lon_start) |>
+  rename(latitude_end = lat_end) |>
+  rename(longitude_end = lon_end) |>
   rename(net_max_depth = net_max_depth_m) |>
   rename(max_wire_out = max_wire_out_m) |>
   rename(wire_rate_out = wire_rate_out_m_min) |>
@@ -51,26 +54,34 @@ meta <- meta |>
   rename(vol_filtered_150 = vol_filtered_m3_150) |>
   mutate(net_max_depth = round(net_max_depth, 2)) |>
   mutate(across(c(vol_filtered_335, vol_filtered_150, haul_factor_10m2_335, haul_factor_10m2_150, haul_factor_100m3_335, haul_factor_100m3_150), \(x) round(x, 3)))
+meta_events <- unique(meta$event)
+
+# save for next version:
+# Rename datetime_start column to eventDate
+# Rename lat start column to decimalLatitude and lat end column to decimalLatitudeEnd
+# Same for longitude    
+# Add event and eventDate to inventory table.
+# meta <- meta |> 
+#   relocate(datetime_UTC_start, .after = sample_name) |>
+#   relocate(datetime_UTC_end, .before = lat_start) |>
+#   select(-date_start_UTC, -time_start_UTC, -date_end_UTC, -time_end_UTC) |>
+#   rename(event = sample_name) |>
+#   rename(eventDate = datetime_UTC_start) |>
+#   rename(decimalLatitude = lat_start) |>
+#   rename(decimalLongitude = lon_start) |>
+#   rename(decimalLatitudeEnd= lat_end) |>
+#   rename(decimalLongitudeEnd = lon_end) |>
+#   rename(net_max_depth = net_max_depth_m) |>
+#   rename(max_wire_out = max_wire_out_m) |>
+#   rename(wire_rate_out = wire_rate_out_m_min) |>
+#   rename(wire_rate_in = wire_rate_in_m_min) |>
+#   rename(vol_filtered_335 = vol_filtered_m3_335)|>
+#   rename(vol_filtered_150 = vol_filtered_m3_150) |>
+#   mutate(net_max_depth = round(net_max_depth, 2)) |>
+#   mutate(across(c(vol_filtered_335, vol_filtered_150, haul_factor_10m2_335, haul_factor_10m2_150, haul_factor_100m3_335, haul_factor_100m3_150), \(x) round(x, 3)))
+# meta_events <- unique(meta$event)
 
 write.csv(meta, 'nes-lter-zooplankton-tow-metadata-v2.csv', row.names=FALSE)
-
-```
-
-```{r}
-
-inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2-input.csv'))
-
-#set case of cruise column
-inventory$cruise <- toupper(inventory$cruise)
-
-# check for any differences in cruise ID between inventory and meta
-inv_cruises <- unique(inventory$cruise)
-setdiff(inv_cruises, meta_cruises)
-
-#match metadata table order of cruises and casts
-inventory <- inventory[with(inventory, order(match(cruise, meta_cruises), cast)),]
-
-write.csv(inventory, 'nes-lter-zooplankton-transect-inventory-v2.csv', row.names=FALSE)
 
 ```
 Check for discrepancies between casts in the two tables
@@ -86,6 +97,31 @@ setdiff(meta$cruisecast, inventory$cruisecast)
 
 ```
 
+```{r}
+# inventory table
+
+inventory <- read.csv(here('nes-lter-zooplankton-transect-inventory-v2-input.csv'))
+
+#set case of cruise column
+inventory$cruise <- toupper(inventory$cruise)
+
+# # save for next version
+# #create event column
+# inventory$net_letter <- str_sub(inventory$net_type, start = 1L, end = 1L)
+# inventory$event <- paste0(inventory$cruise, "_", inventory$station, "_", inventory$net_letter, inventory$cast)
+# inventory <- inventory |> relocate(event, .after = cast)
+# # join with date from metadata table and put in chronological order (followed by mesh size and purpose)
+# dates <- meta |>  select(event, eventDate)
+# inventory <- left_join(inventory, dates)  
+# inventory <- inventory |> relocate(eventDate, .after = event)
+# inventory <- inventory[order(inventory$eventDate, inventory$mesh, inventory$purpose, inventory$stableisotope_sizerange),]
+# # check results
+# inv_events <- unique(inventory$event)
+# event_diff <- setdiff(inv_events, meta_events)
+
+write.csv(inventory, 'nes-lter-zooplankton-transect-inventory-v2.csv', row.names=FALSE)
+
+```
 Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
@@ -125,7 +161,8 @@ make_eml(path = here(),
          data.table.quote.character = c('"','"'),
          temporal.coverage = temp_coverage,
          geographic.description = "NES-LTER Transect",
-         geographic.coordinates = geographic_coordinates(meta$decimalLatitudeStart, meta$decimalLongitudeStart), # Not including end-of-tow coordinates
+         geographic.coordinates = geographic_coordinates(meta$latitude_start, meta$longitude_start),
+         #geographic.coordinates = geographic_coordinates(meta$decimalLatitudeStart, meta$decimalLongitudeStart), # Not including end-of-tow coordinates
          maintenance.description = "ongoing",
          user.id = "NES",
          user.domain = "LTER",

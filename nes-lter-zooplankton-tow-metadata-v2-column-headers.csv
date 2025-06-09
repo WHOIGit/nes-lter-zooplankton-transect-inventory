@@ -2,46 +2,46 @@ attributeName,attributeDefinition,class,unit,dateTimeFormatString,missingValueCo
 cruise,"Identifier for research cruise, generally including abbreviation for research vessel and voyage number",character,,,,
 station,NES-LTER standard station nearest to the sample location,character,,,,
 cast,CTD rosette cast number chronological per cruise,character,,,,
-event,Sample identifier formatted as cruise_station_cast,character,,,,
+sample_name,Sample identifier formatted as cruise_station_cast,character,,,,
 datetime_UTC_start,Date and time event started in UTC,Date,,YYYY-MM-DD hh:mm:ss,,
-datetime_UTC_end,Date and time event ended in UTC,Date,,YYYY-MM-DD hh:mm:ss,,
-decimalLatitudeStart,Latitude at net deployment,numeric,degree,,,
-decimalLongitudeStart,Longitude at net deployment,numeric,degree,,,
-decimalLatitudeEnd,Latitude at net recovery,numeric,degree,,,
-decimalLongitudeEnd,Longitude at net recovery,numeric,degree,,,
-depth_bottom,Depth of the seafloor in sampling area http://vocab.nerc.ac.uk/collection/P09/current/BATH/,numeric,meter,,,
-depth_target,Target depth of net in meters (usually 5 m off the bottom or 200 m max),numeric,meter,,,
-depth_TDR,Maximum depth of bongo frame as recorded by TDR,numeric,meter,,,
-net_max_depth,Maximum depth sampled by zooplankton nets,numeric,meter,,,
-avg_angle,Average angle of winch wire during oblique tows estimated with a handheld inclinometer,numeric,degree,,,
-max_wire_out,Maximum length of winch wire deployed during the tow,numeric,meter,,,
-wire_rate_out,Rate at which the zooplankton net winch wire was deployed,numeric,meterPerMinute,,,
-wire_rate_in,Rate at which the zooplankton net winch wire was retrieved,numeric,meterPerMinute,,,
-STW_start,Ship speed through water at the start of the tow. Used to calculate volume sampled when flowmeters fail,numeric,knot,,,
-SOG_start,Ship speed over ground at the start of the tow,numeric,knot,,,
-STW_end,Ship speed through water at the end of the tow ,numeric,knot,,,
-SOG_end,Ship speed over ground at the end of the tow,numeric,knot,,,
-flowmeter_sn_335,Serial number of flowmeter used in 335 micron net  (typically 29914),numeric,dimensionless,,,
-flow_start_335,Starting flowmeter value for 335 micron net,numeric,dimensionless,,,
-flow_end_335,Ending flowmeter value for 335 micron net,numeric,dimensionless,,,
-tot_flow_counts_335,Difference between flow_start_335 and flow_end_335,numeric,dimensionless,,,
-vol_filtered_335,Volume of water sampled by the 335 micron net,numeric,meterCubed,,,
-NOAA_335,NOAA sample collected in 335 micron net?,categorical,,,,
-DNA_335,DNA sample collected in 335 micron net?,categorical,,,,
-flowmeter_sn_150,Serial number of flowmeter  used in 150 micron net (typically 29913),numeric,dimensionless,,,
-flow_start_150,Starting flowmeter value for 150 micron net,numeric,dimensionless,,,
-flow_end_150,Ending flowmeter value for 150 micron net,numeric,dimensionless,,,
-tot_flow_counts_150,Difference between flow_start_150 and flow_end_150,numeric,dimensionless,,,
-vol_filtered_150,Volume of water sampled by the 150 micron net,numeric,meterCubed,,,
-morph_ID_150,MorphID sample collected in 150 micron net?,categorical,,,,
-DNA_150,DNA sample collected in 150 micron net?,categorical,,,,
-size_fract_150,Were any size fractions sample collected from 150 micron net?,categorical,,,,
-taxa_pick_150,Taxa picking sample collected in 150 micron net?,categorical,,,,
-size_fract_20,Were any size fractions sample collected from 20 micron ring net? ,categorical,,,,
-haul_factor_10m2_335,Surface area standard haul factor for the 335 micron net,numeric,dimensionless,,,
-haul_factor_10m2_150,Surface area standard haul factor for the 150 micron net,numeric,dimensionless,,,
-haul_factor_100m3_335,Volumetric standard haul factor for the 335 micron net,numeric,dimensionless,,,
-haul_factor_100m3_150,Volumetric standard haul factor for the 150 micron net,numeric,dimensionless,,,
-comments,Detailed comments from physical bongo event log sheets,character,,,,
-primary_flag,IODE Quality Flag primary level,categorical,dimensionless,,,
-secondary_flag,Additional context for application of a primary flag other than 1,character,,,,
+datetime_UTC_end,Date and time event ended in UTC,Date,,YYYY-MM-DD hh:mm:ss,"""NA""",not available
+latitude_start,Latitude at net deployment,numeric,degree,,,
+longitude_start,Longitude at net deployment,numeric,degree,,,
+latitude_end,Latitude at net recovery,numeric,degree,,"""NA""",not available
+longitude_end,Longitude at net recovery,numeric,degree,,"""NA""",not available
+depth_bottom,Depth of the seafloor in sampling area http://vocab.nerc.ac.uk/collection/P09/current/BATH/,numeric,meter,,"""NA""",not available
+depth_target,Target depth of net in meters (usually 5 m off the bottom or 200 m max),numeric,meter,,"""NA""",not available
+depth_TDR,Maximum depth of bongo frame as recorded by TDR,numeric,meter,,"""NA""",not available
+net_max_depth,Maximum depth sampled by zooplankton nets,numeric,meter,,"""NA""",not available
+avg_angle,Average angle of winch wire during oblique tows estimated with a handheld inclinometer,numeric,degree,,"""NA""",not available
+max_wire_out,Maximum length of winch wire deployed during the tow,numeric,meter,,"""NA""",not available
+wire_rate_out,Rate at which the zooplankton net winch wire was deployed,numeric,meterPerMinute,,"""NA""",not available
+wire_rate_in,Rate at which the zooplankton net winch wire was retrieved,numeric,meterPerMinute,,"""NA""",not available
+STW_start,Ship speed through water at the start of the tow. Used to calculate volume sampled when flowmeters fail,numeric,knot,,"""NA""",not available
+SOG_start,Ship speed over ground at the start of the tow,numeric,knot,,"""NA""",not available
+STW_end,Ship speed through water at the end of the tow ,numeric,knot,,"""NA""",not available
+SOG_end,Ship speed over ground at the end of the tow,numeric,knot,,"""NA""",not available
+flowmeter_sn_335,Serial number of flowmeter used in 335 micron net  (typically 29914),numeric,dimensionless,,"""NA""",not available
+flow_start_335,Starting flowmeter value for 335 micron net,numeric,dimensionless,,"""NA""",not available
+flow_end_335,Ending flowmeter value for 335 micron net,numeric,dimensionless,,"""NA""",not available
+tot_flow_counts_335,Difference between flow_start_335 and flow_end_335,numeric,dimensionless,,"""NA""",not available
+vol_filtered_335,Volume of water sampled by the 335 micron net,numeric,meterCubed,,"""NA""",not available
+NOAA_335,NOAA sample collected in 335 micron net?,categorical,,,"""NA""",not available
+DNA_335,DNA sample collected in 335 micron net?,categorical,,,"""NA""",not available
+flowmeter_sn_150,Serial number of flowmeter  used in 150 micron net (typically 29913),numeric,dimensionless,,"""NA""",not available
+flow_start_150,Starting flowmeter value for 150 micron net,numeric,dimensionless,,"""NA""",not available
+flow_end_150,Ending flowmeter value for 150 micron net,numeric,dimensionless,,"""NA""",not available
+tot_flow_counts_150,Difference between flow_start_150 and flow_end_150,numeric,dimensionless,,"""NA""",not available
+vol_filtered_150,Volume of water sampled by the 150 micron net,numeric,meterCubed,,"""NA""",not available
+morph_ID_150,MorphID sample collected in 150 micron net?,categorical,,,"""NA""",not available
+DNA_150,DNA sample collected in 150 micron net?,categorical,,,"""NA""",not available
+size_fract_150,Were any size fractions sample collected from 150 micron net?,categorical,,,"""NA""",not available
+taxa_pick_150,Taxa picking sample collected in 150 micron net?,categorical,,,"""NA""",not available
+size_fract_20,Were any size fractions sample collected from 20 micron ring net? ,categorical,,,"""NA""",not available
+haul_factor_10m2_335,Surface area standard haul factor for the 335 micron net,numeric,dimensionless,,"""NA""",not available
+haul_factor_10m2_150,Surface area standard haul factor for the 150 micron net,numeric,dimensionless,,"""NA""",not available
+haul_factor_100m3_335,Volumetric standard haul factor for the 335 micron net,numeric,dimensionless,,"""NA""",not available
+haul_factor_100m3_150,Volumetric standard haul factor for the 150 micron net,numeric,dimensionless,,"""NA""",not available
+comments,Detailed comments from physical bongo event log sheets,character,,,"""NA""",not available
+primary_flag,IODE Quality Flag primary level,categorical,dimensionless,,"""NA""",not available
+secondary_flag,Additional context for application of a primary flag other than 1,character,,,"""NA""",not available

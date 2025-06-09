@@ -70,7 +70,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-0389-2206</userId>
       <role>technician</role>
     </associatedParty>
-    <pubDate>2025-02-24</pubDate>
+    <pubDate>2025-06-09</pubDate>
     <abstract>
       <para>This dataset provides an inventory of physical samples collected from zooplankton bongo and/or ring net tows conducted during the Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2018. The NES-LTER transect, located south of Martha’s Vineyard, Massachusetts, comprises standard stations L1-L11 and extends 150 km offshore. Dedicated NES-LTER cruises target all four seasons: winter, spring, summer, and fall. Samples are collected via oblique tows with a 61-cm bongo net fitted with 150- and 335-micron mesh nets, as well as a ring net with a 20-micron mesh net. During earlier spring and fall cruises along the NES-LTER Transect, in collaboration with the Ocean Observatories Initiative, samples were collected through vertical tows using a ring net with a 150-micron mesh. Samples collected are distributed among various laboratories for DNA metabarcoding, stable isotopes analysis, and morphological identification. </para>
     </abstract>
@@ -148,7 +148,7 @@ We’d like to thank additional personnel who conducted bongo tow sampling on Tr
 Here we summarize the field operations for net tows, since the focus of this data package is on providing a detailed inventory of zooplankton samples collected at sea and processed on board. Related methods are documented in the associated zooplankton abundance data package [knb-lter-nes.25]. Subsequent analyses, such as stable isotopes, will be detailed in dedicated data packages. An event log data package [knb-lter-nes.20] for transect cruises with raw event log data is available. The metadata file included in this inventory package [nes-lter-zooplankton-tow-metadata-v2] includes all pertinent data that was extracted from and corrected from the electronic event logs. 
 
 ## Field Sampling Operations for Oblique Bongo/Ring Net Tow
-During dedicated Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises, zooplankton sampling occurs at each standard transect station (L1-L11 and in the vicinity of the Martha’s Vineyard Coastal Observatory, MVCO). Zooplankton is collected with 61-cm diameter bongo nets, one with a 335-µm mesh and the other with a 150-µm mesh. Both nets are 3.2 m long and have similar porosity values— 45% and 46%, respectively. The nets are conically shaped and taper down to a detachable cod end. A General Oceanics mechanical flowmeter is attached to the center of each bongo net mouth. A Star-Oddi DST centi-TD time-depth recorder (TDR) is attached to the bongo frame to record the net’s maximum depth, trajectory during the tow, and water temperature (to be accessed post-deployment). During the tow, the depth of the net is checked by measuring wire angle using a handheld inclinometer. Zooplankton sampling tows are conducted as single oblique (descending and then ascending only once), towing at a speed through the water of 1.5 to 2.0 knots. The target net depth is 5 m off the bottom, or 200 m when bottom depth exceeds 200 m. Winch pay-out and retrieval speeds follow NOAA’s EcoMon protocol, with the exception that our maximum pay-out speed is 30 m/min (e.g. when the target sampling depths are &gt;60 m, pay-out is at 30 m/min and retrieval is at 20 m/min). The bongo frame attaches to the end of the wire with a shackle. Attached to the bottom of the bongo frame is a ~1.5 ft section of chain and a 45 kg weight. 
+During dedicated Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises, zooplankton sampling occurs at each standard transect station (L1-L11 and in the vicinity of the Martha’s Vineyard Coastal Observatory, MVCO). Zooplankton are collected with 61-cm diameter bongo nets, one with a 335-µm mesh and the other with a 150-µm mesh. Both nets are 3.2 m long and have similar porosity values— 45% and 46%, respectively. The nets are conically shaped and taper down to a detachable cod end. A General Oceanics mechanical flowmeter is attached to the center of each bongo net mouth. A Star-Oddi DST centi-TD time-depth recorder (TDR) is attached to the bongo frame to record the net’s maximum depth, trajectory during the tow, and water temperature (to be accessed post-deployment). During the tow, the depth of the net is checked by measuring wire angle using a handheld inclinometer. Zooplankton sampling tows are conducted as single oblique (descending and then ascending only once), towing at a speed through the water of 1.5 to 2.0 knots. The target net depth is 5 m off the bottom, or 200 m when bottom depth exceeds 200 m. Winch pay-out and retrieval speeds follow NOAA’s EcoMon protocol, with the exception that our maximum pay-out speed is 30 m/min (e.g. when the target sampling depths are &gt;60 m, pay-out is at 30 m/min and retrieval is at 20 m/min). The bongo frame attaches to the end of the wire with a shackle. Attached to the bottom of the bongo frame is a ~1.5 ft section of chain and a 45 kg weight. 
 
 In addition to the bongo nets, a 30-cm-diameter ring net with a mesh size of 20 µm is attached ~2 m above the bongo frame with a book clamp. This ring net is non-quantitative and is only used for size fractionated stable isotope analysis—specifically the 20-100 µm and 100-200 µm fractions.
 
@@ -566,7 +566,7 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
       <physical>
         <objectName>nes-lter-zooplankton-transect-inventory-v2.csv</objectName>
         <size unit="bytes">296453</size>
-        <authentication method="MD5">7cf95ed3edd025b2a13c8a639c8ce2e4</authentication>
+        <authentication method="MD5">1ec156c327b6d314d4c499e80be9b10e</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -828,6 +828,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>no_of_jars</attributeName>
@@ -884,8 +888,8 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
       <entityDescription>Zooplankton tow metadata for NES-LTER Transect cruises</entityDescription>
       <physical>
         <objectName>nes-lter-zooplankton-tow-metadata-v2.csv</objectName>
-        <size unit="bytes">107097</size>
-        <authentication method="MD5">8731c9a285187a7b56958ac4e8c09d9b</authentication>
+        <size unit="bytes">107079</size>
+        <authentication method="MD5">2357f994f7bf9ee473789e621ea1d1e9</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -942,7 +946,7 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>event</attributeName>
+          <attributeName>sample_name</attributeName>
           <attributeDefinition>Sample identifier formatted as cruise_station_cast</attributeDefinition>
           <storageType>string</storageType>
           <measurementScale>
@@ -976,9 +980,13 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               <dateTimeDomain/>
             </dateTime>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
-          <attributeName>decimalLatitudeStart</attributeName>
+          <attributeName>latitude_start</attributeName>
           <attributeDefinition>Latitude at net deployment</attributeDefinition>
           <storageType>float</storageType>
           <measurementScale>
@@ -997,7 +1005,7 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>decimalLongitudeStart</attributeName>
+          <attributeName>longitude_start</attributeName>
           <attributeDefinition>Longitude at net deployment</attributeDefinition>
           <storageType>float</storageType>
           <measurementScale>
@@ -1016,7 +1024,7 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>decimalLatitudeEnd</attributeName>
+          <attributeName>latitude_end</attributeName>
           <attributeDefinition>Latitude at net recovery</attributeDefinition>
           <storageType>float</storageType>
           <measurementScale>
@@ -1033,9 +1041,13 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
-          <attributeName>decimalLongitudeEnd</attributeName>
+          <attributeName>longitude_end</attributeName>
           <attributeDefinition>Longitude at net recovery</attributeDefinition>
           <storageType>float</storageType>
           <measurementScale>
@@ -1052,6 +1064,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>depth_bottom</attributeName>
@@ -1071,6 +1087,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>depth_target</attributeName>
@@ -1090,6 +1110,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>depth_TDR</attributeName>
@@ -1109,6 +1133,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>net_max_depth</attributeName>
@@ -1128,6 +1156,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>avg_angle</attributeName>
@@ -1147,6 +1179,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>max_wire_out</attributeName>
@@ -1166,6 +1202,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>wire_rate_out</attributeName>
@@ -1185,6 +1225,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>wire_rate_in</attributeName>
@@ -1204,6 +1248,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>STW_start</attributeName>
@@ -1223,6 +1271,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>SOG_start</attributeName>
@@ -1242,6 +1294,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>STW_end</attributeName>
@@ -1261,6 +1317,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>SOG_end</attributeName>
@@ -1280,6 +1340,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flowmeter_sn_335</attributeName>
@@ -1299,6 +1363,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flow_start_335</attributeName>
@@ -1318,6 +1386,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flow_end_335</attributeName>
@@ -1337,6 +1409,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>tot_flow_counts_335</attributeName>
@@ -1356,6 +1432,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>vol_filtered_335</attributeName>
@@ -1375,6 +1455,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>NOAA_335</attributeName>
@@ -1396,6 +1480,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>DNA_335</attributeName>
@@ -1417,6 +1505,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flowmeter_sn_150</attributeName>
@@ -1436,6 +1528,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flow_start_150</attributeName>
@@ -1455,6 +1551,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>flow_end_150</attributeName>
@@ -1474,6 +1574,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>tot_flow_counts_150</attributeName>
@@ -1493,6 +1597,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>vol_filtered_150</attributeName>
@@ -1512,6 +1620,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>morph_ID_150</attributeName>
@@ -1533,6 +1645,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>DNA_150</attributeName>
@@ -1554,6 +1670,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>size_fract_150</attributeName>
@@ -1575,6 +1695,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>taxa_pick_150</attributeName>
@@ -1596,6 +1720,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>size_fract_20</attributeName>
@@ -1617,6 +1745,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>haul_factor_10m2_335</attributeName>
@@ -1636,6 +1768,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>haul_factor_10m2_150</attributeName>
@@ -1655,6 +1791,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>haul_factor_100m3_335</attributeName>
@@ -1674,6 +1814,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>haul_factor_100m3_150</attributeName>
@@ -1693,6 +1837,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </numericDomain>
             </ratio>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>comments</attributeName>
@@ -1707,6 +1855,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>primary_flag</attributeName>
@@ -1740,6 +1892,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>secondary_flag</attributeName>
@@ -1754,6 +1910,10 @@ Jossi, Jack W. and Robert R. Marak. 1983. MARMAP Plankton Survey Manual. United 
               </nonNumericDomain>
             </nominal>
           </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
         </attribute>
       </attributeList>
       <numberOfRecords>281</numberOfRecords>
